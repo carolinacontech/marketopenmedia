@@ -1,12 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Services — Market Open Media</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<?php
+/**
+ * Template Name: Services
+ */
+get_header();
+?>
 <style>
 /* ── tokens ─────────────────────────────────────── */
 :root{
@@ -79,7 +76,7 @@ a{color:inherit;text-decoration:none}
   font-weight:600;
   color:#fff;
   background:var(--blue);
-  padding:11px 28px;
+  padding:11px 60px;
   border-radius:7px;
   letter-spacing:0.015em;
   border:none;
@@ -967,9 +964,7 @@ footer{
     position:fixed;
     top:68px;left:0;right:0;bottom:0;
     z-index:200;
-    background:rgba(4,12,27,0.97);
-    backdrop-filter:blur(24px);
-    -webkit-backdrop-filter:blur(24px);
+    background:#040c1b;
     border-top:1px solid var(--line);
     padding:40px 28px 44px;
     gap:4px;
@@ -1139,8 +1134,8 @@ footer{
   }
   .how-bar{
     grid-template-columns:1fr 1fr !important;
-    gap:16px;
-    padding:0 24px;
+    gap:20px;
+    padding:28px 24px;
   }
   .how-bar-divider{display:none;}
 
@@ -1165,10 +1160,18 @@ footer{
   .tab-header{flex-wrap:wrap;}
 
   /* CTA */
-  .cta-section{padding:56px 24px 72px;}
-  .cta-box{padding:48px 24px 52px;}
-  .cta-row{flex-direction:column;align-items:center;gap:16px;}
-  .cta-row .btn-primary{width:100%;justify-content:center;}
+  .cta-section{padding:40px 16px 60px;}
+  .cta-box{padding:52px 20px 56px;}
+  .cta-row{flex-direction:column;align-items:stretch;gap:16px;}
+  .cta-row .btn-primary{
+    width:100%;
+    justify-content:center;
+    padding:18px 32px;
+    font-size:13px;
+    white-space:normal;
+    text-align:center;
+    line-height:1.4;
+  }
 
   /* Footer */
   footer{
@@ -1199,8 +1202,7 @@ footer{
   footer{padding:24px 18px;}
 }
 </style>
-</head>
-<body>
+
 <div class="page">
 
 <!-- HEADER -->
@@ -1217,7 +1219,6 @@ footer{
     <a href="#" class="active">Services</a>
     <a href="#">Results</a>
     <a href="#">About</a>
-    <a href="#">Contact</a>
     <a href="https://calendly.com/marketopenmedia/googlemapsseo" class="btn-nav" target="_blank" rel="noopener">Book a Call</a>
   </nav>
 </header>
@@ -1710,5 +1711,5 @@ document.querySelectorAll('.fade').forEach(function(el){ obs.observe(el); });
   });
 })();
 </script>
-</body>
-</html>
+
+<?php get_footer(); ?>
