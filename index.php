@@ -578,7 +578,7 @@ h1{
   .hero-body{padding:0 24px}
   .hero-content{padding-left:24px}
   h1{font-size:clamp(38px,12vw,50px)}
-  .hero-sub{font-size:14.5px;line-height:1.62;text-align:justify}
+  .hero-sub{font-size:14.5px;line-height:1.62;text-align:justify;padding-right:24px}
 
   /* Trust signals — Google Specialist centered alone, other two side by side below */
   .hero-content > div[style*="display:flex;align-items:center;flex-wrap:wrap"]{
@@ -748,17 +748,21 @@ h1{
     gap:12px !important;
   }
 
-  /* What You Get — center icons & titles, justify paragraphs */
+  /* What You Get — 2 columnas, alineación izquierda uniforme */
+  div[style*="display:grid;grid-template-columns:repeat(3,1fr)"][style*="max-width:960px"]{
+    grid-template-columns:1fr 1fr !important;
+    gap:28px 20px !important;
+  }
   div[style*="max-width:960px"] > div{
     display:flex !important;
     flex-direction:column !important;
-    align-items:center !important;
+    align-items:flex-start !important;
   }
   div[style*="max-width:960px"] > div > p:first-of-type{
-    text-align:center !important;
+    text-align:left !important;
   }
   div[style*="max-width:960px"] > div > p:last-of-type{
-    text-align:justify !important;
+    text-align:left !important;
   }
 
   /* Metrics + Testimonial — stack on mobile */
@@ -772,6 +776,15 @@ h1{
     border-top:none !important;
     padding-top:0 !important;
     padding-bottom:8px !important;
+  }
+  /* Heatmaps — mismo tamaño: stack 1 columna, header igual altura */
+  div[style*="grid-template-columns:1fr 1fr;gap:32px;max-width:900px"]{
+    grid-template-columns:1fr !important;
+    gap:20px !important;
+    max-width:100% !important;
+  }
+  div[style*="grid-template-columns:1fr 1fr;gap:32px;max-width:900px"] > div > div:first-child{
+    min-height:72px !important;
   }
   .services{padding:8px 24px 64px !important}
   .services > div:first-child{text-align:center !important}
