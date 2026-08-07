@@ -1,18 +1,28 @@
-<?php
-/*
- * Template Name: Services - Market Open Media
- * Template Post Type: page
- */
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Services — Market Open Media</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<!-- Open Graph / Social Media -->
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://marketopenmedia.com/services.php"/>
+<meta property="og:title" content="Our Services — Market Open Media"/>
+<meta property="og:description" content="Google Maps SEO, Google Business Profile optimization, and local ranking strategy for service-based contractors. See how we get you more calls."/>
+<meta property="og:image" content="https://res.cloudinary.com/dvblqyb4g/image/upload/ChatGPT_Image_Jul_21_2026_at_10_51_21_PM_rwui6j.png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:site_name" content="Market Open Media"/>
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Our Services — Market Open Media"/>
+<meta name="twitter:description" content="Google Maps SEO and local ranking strategy for contractors. Get more calls."/>
+<meta name="twitter:image" content="https://res.cloudinary.com/dvblqyb4g/image/upload/ChatGPT_Image_Jul_21_2026_at_10_51_21_PM_rwui6j.png"/>
+<!-- SEO -->
+<meta name="description" content="Google Maps SEO, Google Business Profile optimization, and local ranking strategy for service-based contractors. See how we get you more calls."/>
+<link rel="canonical" href="https://marketopenmedia.com/services.php"/>
+</head>
+<body>
 <style>
 /* ── tokens ─────────────────────────────────────── */
 :root{
@@ -80,12 +90,14 @@ a{color:inherit;text-decoration:none}
 .btn-nav{
   display:inline-flex;
   align-items:center;
+  justify-content:center;
   font-family:var(--f);
-  font-size:13.5px;
+  font-size:15px;
   font-weight:600;
   color:#fff;
   background:var(--blue);
-  padding:11px 28px;
+  padding:14px 48px;
+  min-width:200px;
   border-radius:7px;
   letter-spacing:0.015em;
   border:none;
@@ -942,24 +954,287 @@ footer{
 .fade{opacity:0;transform:translateY(24px);transition:opacity .6s ease, transform .6s ease}
 .fade.in{opacity:1;transform:translateY(0)}
 .d1{transition-delay:.10s}.d2{transition-delay:.20s}.d3{transition-delay:.30s}.d4{transition-delay:.40s}
+
+/* ══════════════════════════════════════════════════
+   RESPONSIVE — 1100px
+══════════════════════════════════════════════════ */
+@media(max-width:1100px){
+  .header{padding:0 36px;height:80px;}
+  .main-hero-inner{padding:72px 36px 80px;gap:40px;}
+  .main-h1{font-size:clamp(36px,5vw,56px);}
+  .hero{padding:64px 36px 80px;}
+  .services-detail,.why-inner,.how-cards,.process-section,.cta-section{
+    padding-left:36px;padding-right:36px;
+  }
+  .industry-inner{padding:26px 36px 32px;}
+}
+
+/* ══════════════════════════════════════════════════
+   RESPONSIVE — 860px (tablet → single column)
+══════════════════════════════════════════════════ */
+@media(max-width:860px){
+  /* Header */
+  .header{padding:0 24px;height:68px;}
+  .nav{display:none;}
+
+  /* Mobile drawer */
+  .nav.open{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    position:fixed;
+    top:0;left:0;right:0;bottom:0;
+    z-index:9999;
+    background:#040c1b;
+    backdrop-filter:none;
+    -webkit-backdrop-filter:none;
+    border-top:none;
+    padding:100px 28px 44px;
+    gap:4px;
+    overflow-y:auto;
+  }
+  .nav.open a{
+    font-size:20px;font-weight:500;
+    letter-spacing:-.02em;
+    padding:12px 4px;
+    width:100%;
+    color:rgba(255,255,255,0.80);
+    border-bottom:1px solid rgba(255,255,255,0.06);
+    border-radius:0;
+  }
+  .nav.open .btn-nav{
+    margin-top:22px;font-size:15px;
+    padding:16px 28px;width:100%;
+    text-align:center;justify-content:center;
+    border-radius:10px;border-bottom:none;
+  }
+
+  /* Burger */
+  .burger{
+    display:flex;
+    flex-direction:column;
+    gap:5px;
+    background:none;
+    border:none;
+    cursor:pointer;
+    padding:6px;
+    border-radius:6px;
+  }
+  .burger span{
+    display:block;width:22px;height:1.5px;
+    background:rgba(255,255,255,0.75);
+    border-radius:2px;transform-origin:center;transition:.22s;
+  }
+
+  /* Main hero — reordenar elementos en mobile */
+  .main-hero-inner{
+    display:flex !important;
+    flex-direction:column !important;
+    padding:52px 24px 56px;
+    gap:0;
+  }
+  /* hero-left se convierte en contenedor transparente para hijos */
+  .hero-left{
+    display:contents;
+  }
+  /* Orden: eyebrow+h1+paras primero, luego imagen, luego tagline+boton */
+  .hero-left .eyebrow{ order:1; margin-bottom:20px; }
+  .hero-left .main-h1{ order:2; }
+  .hero-left .main-paras{ order:3; margin-bottom:24px; }
+  .hero-right{ order:4; min-height:auto; margin-bottom:28px; }
+  .hero-left .main-tagline{ order:5; font-size:17px; margin-bottom:20px; }
+  .hero-left .btn-primary{ order:6; }
+  .dash-wrap{max-width:100%;}
+
+  /* Hero section (2nd section) — reordenar widget antes del botón */
+  .hero{
+    display:flex !important;
+    flex-direction:column !important;
+    padding:52px 24px 60px;
+    gap:0;
+  }
+  /* hero-content se convierte en contenedor transparente */
+  .hero-content{
+    display:contents;
+  }
+  .hero-content h1{ order:1; font-size:clamp(32px,9vw,48px); margin-bottom:18px; }
+  .hero-content .hero-sub{ order:2; margin-bottom:16px; }
+  .hero-content .hero-tagline{ order:3; margin-bottom:24px; }
+  .tab-widget{ order:4; margin-bottom:28px; }
+  .hero-content .btn-primary{ order:5; }
+
+  /* Services detail */
+  .services-detail{padding:56px 24px 72px;}
+  .service-block{
+    grid-template-columns:1fr !important;
+    gap:0;
+  }
+  .service-block.reverse{direction:ltr;}
+
+  /* Reduce icon/visual area height on mobile */
+  .service-visual{
+    min-height:160px !important;
+    padding:24px 20px !important;
+  }
+  .svc-icon-img img,
+  .svc-icon-img svg{
+    width:120px !important;
+    height:120px !important;
+  }
+  .svc-icon-ring{
+    width:80px !important;
+    height:80px !important;
+  }
+  .svc-icon-ring svg{
+    width:34px !important;
+    height:34px !important;
+  }
+
+  /* Service info padding on mobile */
+  .service-info{
+    padding:28px 20px !important;
+  }
+
+  /* Feature grid */
+  .feature-grid{grid-template-columns:1fr !important;}
+
+  /* Why section — stack cards, armonizar tipografía */
+  .why-inner{
+    padding:56px 24px 72px;
+  }
+  .why-grid{
+    grid-template-columns:1fr !important;
+    display:flex !important;
+    flex-direction:column !important;
+    gap:20px !important;
+  }
+  .why-left{
+    order:1;
+    padding:32px 24px !important;
+  }
+  .why-right{
+    order:2;
+    padding:32px 24px !important;
+  }
+  .why-left h3{
+    font-size:21px !important;
+    font-weight:700 !important;
+    letter-spacing:-0.025em !important;
+    line-height:1.18 !important;
+    margin-bottom:14px !important;
+  }
+  .why-left p{
+    font-size:14px !important;
+    line-height:1.70 !important;
+    margin-bottom:12px !important;
+  }
+  .why-tagline{
+    font-size:13px !important;
+    padding-top:16px !important;
+    margin-top:6px !important;
+  }
+  .crown{
+    font-size:22px !important;
+    margin-bottom:12px !important;
+  }
+  .why-right h3{
+    font-size:16px !important;
+    font-weight:700 !important;
+    letter-spacing:-0.015em !important;
+    margin-bottom:18px !important;
+  }
+  .why-list li{
+    font-size:14px !important;
+    line-height:1.50 !important;
+    padding:11px 0 !important;
+    gap:12px !important;
+  }
+
+  /* How cards */
+  .how-cards{
+    grid-template-columns:1fr !important;
+    padding:0 24px;
+    gap:16px;
+  }
+  .how-bar{
+    grid-template-columns:1fr 1fr !important;
+    gap:20px;
+    padding:28px 24px;
+  }
+  .how-bar-divider{display:none;}
+
+  /* Process steps */
+  .process-section{padding:56px 24px 72px;}
+  .process-steps{
+    grid-template-columns:1fr !important;
+    gap:20px;
+  }
+  .process-steps::before{display:none;}
+
+  /* Industry strip */
+  .industry-inner{padding:22px 24px 28px;}
+  .industry-grid{
+    grid-template-columns:repeat(3,1fr) !important;
+    gap:0;
+  }
+  .industry-item{border-right:none;border-bottom:1px solid var(--line);padding:14px 10px;}
+  .industry-item:nth-child(3),.industry-item:last-child{border-bottom:none;}
+
+  /* Tab widget */
+  .tab-header{flex-wrap:wrap;}
+
+  /* CTA */
+  .cta-section{padding:56px 24px 72px;}
+  .cta-box{padding:48px 24px 52px;}
+  .cta-row{flex-direction:column;align-items:center;gap:16px;}
+  .cta-row .btn-primary{width:100%;justify-content:center;}
+
+  /* Footer */
+  footer{
+    flex-direction:column;gap:16px;
+    text-align:center;
+    padding:28px 24px;
+  }
+
+  /* Buttons */
+  .btn-primary{width:100%;justify-content:center;white-space:normal;}
+}
+
+/* ══════════════════════════════════════════════════
+   RESPONSIVE — 480px (small phones)
+══════════════════════════════════════════════════ */
+@media(max-width:480px){
+  .header{padding:0 18px;}
+  .main-hero-inner{padding:40px 18px 48px;}
+  .main-h1{font-size:clamp(28px,10vw,40px);}
+  .hero{padding:40px 18px 48px;}
+  .services-detail,.why-inner,.process-section,.cta-section{
+    padding-left:18px;padding-right:18px;
+  }
+  .how-cards,.how-bar{padding-left:18px;padding-right:18px;}
+  .industry-inner{padding:20px 18px 24px;}
+  .industry-grid{grid-template-columns:repeat(2,1fr) !important;}
+  .industry-item:nth-child(2){border-bottom:1px solid var(--line);}
+  footer{padding:24px 18px;}
+}
 </style>
-</head>
-<body>
+
 <div class="page">
 
 <!-- HEADER -->
 <header class="header">
-  <a href="#" aria-label="Market Open Media">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 120" style="height:28px;width:auto;display:block;">
-      <text x="0" y="76" fill="#F8FAFF" font-family="Inter, Arial, Helvetica, sans-serif" font-size="54" font-weight="600" letter-spacing="16">MARKET OPEN MEDIA</text>
-    </svg>
+  <a href="index.php" aria-label="Market Open Media">
+    <img src="https://res.cloudinary.com/dvblqyb4g/image/upload/v1781132748/copy_of_chatgpt_image_jun_10_2026_at_12_47_08_pm_tu2gmz.png" alt="Market Open Media" style="height:60px;width:auto;display:block;">
   </a>
+  <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" style="display:none;">
+    <span></span><span></span><span></span>
+  </button>
   <nav class="nav" id="nav">
+    <a href="index.php">Home</a>
     <a href="#" class="active">Services</a>
-    <a href="#">Results</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
-    <a href="https://calendly.com/marketopenmedia" class="btn-nav" target="_blank" rel="noopener">Book a Call</a>
+    <a href="index.php#results">Results</a>
+    <a href="index.php#about">About</a>
+    <a href="https://calendly.com/marketopenmedia/googlemapsseo" class="btn-nav" target="_blank" rel="noopener">Book a Call</a>
   </nav>
 </header>
 
@@ -975,7 +1250,7 @@ footer{
         <p>We help you appear at the top of Google Maps and Local Services Ads so you can generate more calls and book more jobs.</p>
       </div>
       <p class="main-tagline">Get found. Get called. Get hired.</p>
-      <a href="https://calendly.com/marketopenmedia" class="btn-primary" target="_blank" rel="noopener">
+      <a href="https://calendly.com/marketopenmedia/googlemapsseo" class="btn-primary" target="_blank" rel="noopener">
         Book a Free Strategy Call
         <span class="arr"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1.5 7H12.5M8.5 2.5L12.5 7L8.5 11.5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
       </a>
@@ -1117,7 +1392,7 @@ footer{
     <h1>Two Google Channels<span class="dot">.</span><br>One Clear Goal<span class="dot">.</span></h1>
     <p class="hero-sub">We use the power of <strong style="color:#fff;font-weight:700;">Google Maps</strong> and <strong style="color:#fff;font-weight:700;">Google Local Services Ads</strong> to put your business in front of high-intent customers at the exact moment they are ready to act.</p>
     <p class="hero-tagline">More visibility. More qualified calls. More booked jobs.</p>
-    <a href="https://calendly.com/marketopenmedia" class="btn-primary" target="_blank" rel="noopener">
+    <a href="https://calendly.com/marketopenmedia/googlemapsseo" class="btn-primary" target="_blank" rel="noopener">
       Book a Free Strategy Call
       <span class="arr"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1.5 7H12.5M8.5 2.5L12.5 7L8.5 11.5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
     </a>
@@ -1280,7 +1555,7 @@ footer{
     <div class="how-card fade d1">
       <div class="how-icon">🎯</div>
       <h3>Hyper-Local Targeting</h3>
-      <p>We optimize your business for searches within your community. 72% of Google Maps users choose businesses within 10 miles — ranking locally puts you directly in front of nearby customers.</p>
+      <p>We optimize your business for searches within your community. 74% of Google Maps users choose businesses within 10 miles — ranking locally puts you directly in front of nearby customers.</p>
     </div>
     <div class="how-card fade d2">
       <div class="how-icon">📡</div>
@@ -1290,7 +1565,7 @@ footer{
     <div class="how-card fade d3">
       <div class="how-icon">🏆</div>
       <h3>Top-of-Search Advantage</h3>
-      <p>We place your business directly into Google's Map Pack, where 75% of customers immediately call, book, or request directions — straight from their phones.</p>
+      <p>We place your business directly into Google's Map Pack, where 74% of customers immediately call, book, or request directions — straight from their phones.</p>
     </div>
   </div>
 
@@ -1372,7 +1647,7 @@ footer{
     <h2>Ready to Get More Visibility on Google<span class="dot">?</span></h2>
     <p>More visibility. More qualified calls. More booked jobs.</p>
     <div class="cta-row">
-      <a href="https://calendly.com/marketopenmedia" class="btn-primary" target="_blank" rel="noopener">
+      <a href="https://calendly.com/marketopenmedia/googlemapsseo" class="btn-primary" target="_blank" rel="noopener">
         Book a Free Strategy Call
         <span class="arr"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1.5 7H12.5M8.5 2.5L12.5 7L8.5 11.5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
       </a>
@@ -1386,11 +1661,82 @@ footer{
 </div>
 
 <!-- FOOTER -->
-<footer>
-  <div class="footer-logo">Market Open Media</div>
-  <div class="footer-copy">© 2025 Market Open Media. All rights reserved.</div>
-</footer>
+<footer style="background:#030b1a;border-top:1px solid rgba(255,255,255,0.08);padding:64px 68px 32px;">
+  <div style="max-width:1520px;margin:0 auto;">
 
+    <!-- Top row -->
+    <div style="display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:52px;align-items:start;">
+
+      <!-- Brand col -->
+      <div>
+        <div style="margin-bottom:20px;">
+          <a href="index.php" style="text-decoration:none;display:inline-block;">
+            <img src="https://res.cloudinary.com/dvblqyb4g/image/upload/v1781132748/copy_of_chatgpt_image_jun_10_2026_at_12_47_08_pm_tu2gmz.png" alt="Market Open Media" style="height:60px;width:auto;display:block;">
+          </a>
+        </div>
+        <p style="font-size:13.5px;color:rgba(255,255,255,0.45);line-height:1.70;max-width:280px;margin-bottom:24px;">Performance marketing for local service businesses. We get you to the top of Google Maps and fill your phone with qualified calls.</p>
+      </div>
+
+      <!-- Services col -->
+      <div>
+        <p style="font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#fff;margin-bottom:18px;">Services</p>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:11px;">
+          <li><a href="services.php" style="font-size:13.5px;color:rgba(255,255,255,0.48);text-decoration:none;" onmouseover="this.style.color='rgba(255,255,255,0.85)'" onmouseout="this.style.color='rgba(255,255,255,0.48)'">Google Maps SEO</a></li>
+          <li><a href="services.php" style="font-size:13.5px;color:rgba(255,255,255,0.48);text-decoration:none;" onmouseover="this.style.color='rgba(255,255,255,0.85)'" onmouseout="this.style.color='rgba(255,255,255,0.48)'">Google LSA Management</a></li>
+          <li><a href="index.php#results" style="font-size:13.5px;color:rgba(255,255,255,0.48);text-decoration:none;" onmouseover="this.style.color='rgba(255,255,255,0.85)'" onmouseout="this.style.color='rgba(255,255,255,0.48)'">Case Studies</a></li>
+          <li><a href="index.php#why" style="font-size:13.5px;color:rgba(255,255,255,0.48);text-decoration:none;" onmouseover="this.style.color='rgba(255,255,255,0.85)'" onmouseout="this.style.color='rgba(255,255,255,0.48)'">Why Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Industries col -->
+      <div>
+        <p style="font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#fff;margin-bottom:18px;">Industries</p>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:11px;">
+          <li style="font-size:13.5px;color:rgba(255,255,255,0.48);">Tree Services</li>
+          <li style="font-size:13.5px;color:rgba(255,255,255,0.48);">HVAC</li>
+          <li style="font-size:13.5px;color:rgba(255,255,255,0.48);">Plumbing</li>
+          <li style="font-size:13.5px;color:rgba(255,255,255,0.48);">Roofing</li>
+          <li style="font-size:13.5px;color:rgba(255,255,255,0.48);">Electrical</li>
+        </ul>
+      </div>
+
+      <!-- Contact col -->
+      <div>
+        <p style="font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#fff;margin-bottom:18px;">Contact</p>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:12px;">
+          <li style="display:flex;align-items:center;gap:9px;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="rgba(255,255,255,0.40)" stroke-width="2"/><polyline points="22,6 12,13 2,6" stroke="rgba(255,255,255,0.40)" stroke-width="2"/></svg>
+            <a href="mailto:info@marketopenmedia.com" style="font-size:13px;color:rgba(255,255,255,0.48);text-decoration:none;" onmouseover="this.style.color='rgba(255,255,255,0.85)'" onmouseout="this.style.color='rgba(255,255,255,0.48)'">info@marketopenmedia.com</a>
+          </li>
+          <li style="display:flex;align-items:center;gap:9px;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="rgba(255,255,255,0.40)" stroke-width="2"/><polyline points="22,6 12,13 2,6" stroke="rgba(255,255,255,0.40)" stroke-width="2"/></svg>
+            <a href="mailto:marketopenmedia@gmail.com" style="font-size:13px;color:rgba(255,255,255,0.48);text-decoration:none;" onmouseover="this.style.color='rgba(255,255,255,0.85)'" onmouseout="this.style.color='rgba(255,255,255,0.48)'">marketopenmedia@gmail.com</a>
+          </li>
+          <li style="display:flex;align-items:center;gap:9px;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" stroke="rgba(255,255,255,0.40)" stroke-width="2"/></svg>
+            <a href="https://calendly.com/marketopenmedia/googlemapsseo" target="_blank" style="font-size:13px;color:rgba(255,255,255,0.48);text-decoration:none;" onmouseover="this.style.color='rgba(255,255,255,0.85)'" onmouseout="this.style.color='rgba(255,255,255,0.48)'">Book a Call</a>
+          </li>
+        </ul>
+        <a href="https://calendly.com/marketopenmedia/googlemapsseo" target="_blank" rel="noopener"
+           style="display:inline-flex;align-items:center;gap:8px;margin-top:24px;background:var(--blue);color:#fff;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:13px 22px;border-radius:7px;text-decoration:none;">
+          Book a Free Call
+          <svg width="12" height="12" viewBox="0 0 14 14" fill="none"><path d="M1.5 7H12.5M8.5 2.5L12.5 7L8.5 11.5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Bottom bar -->
+    <div style="border-top:1px solid rgba(255,255,255,0.07);padding-top:24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;">
+      <p style="font-size:12px;color:rgba(255,255,255,0.25);">© 2026 Market Open Media. All rights reserved.</p>
+      <div style="display:flex;gap:24px;">
+        <a href="#" style="font-size:12px;color:rgba(255,255,255,0.25);text-decoration:none;" onmouseover="this.style.color='rgba(255,255,255,0.55)'" onmouseout="this.style.color='rgba(255,255,255,0.25)'">Privacy Policy</a>
+        <a href="#" style="font-size:12px;color:rgba(255,255,255,0.25);text-decoration:none;" onmouseover="this.style.color='rgba(255,255,255,0.55)'" onmouseout="this.style.color='rgba(255,255,255,0.25)'">Terms of Service</a>
+      </div>
+    </div>
+
+  </div>
+</footer>
 </div><!-- .page -->
 
 <script>
@@ -1412,5 +1758,45 @@ var obs = new IntersectionObserver(function(entries){
 }, { threshold: 0.12 });
 document.querySelectorAll('.fade').forEach(function(el){ obs.observe(el); });
 </script>
+
+<script>
+(function(){
+  var burger = document.getElementById('burger');
+  var nav    = document.getElementById('nav');
+  var open   = false;
+  function showBurger(){
+    if(window.innerWidth <= 860){ burger.style.display='flex'; }
+    else { burger.style.display='none'; if(open) closeMenu(); }
+  }
+  function openMenu(){
+    open=true; nav.classList.add('open');
+    burger.setAttribute('aria-expanded','true');
+    burger.setAttribute('aria-label','Close menu');
+    var b=burger.querySelectorAll('span');
+    b[0].style.transform='rotate(45deg) translate(4.5px,4.5px)';
+    b[1].style.opacity='0';
+    b[2].style.transform='rotate(-45deg) translate(4.5px,-4.5px)';
+    document.body.style.overflow='hidden';
+  }
+  function closeMenu(){
+    open=false; nav.classList.remove('open');
+    burger.setAttribute('aria-expanded','false');
+    burger.setAttribute('aria-label','Open menu');
+    var b=burger.querySelectorAll('span');
+    b[0].style.transform=b[1].style.opacity=b[2].style.transform='';
+    document.body.style.overflow='';
+  }
+  showBurger();
+  window.addEventListener('resize', showBurger);
+  burger.addEventListener('click',function(){ open?closeMenu():openMenu(); });
+  nav.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click',function(){ if(open)closeMenu(); });
+  });
+  document.addEventListener('keydown',function(e){
+    if(e.key==='Escape'&&open) closeMenu();
+  });
+})();
+</script>
+
 </body>
 </html>

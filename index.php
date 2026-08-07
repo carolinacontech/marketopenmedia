@@ -17,6 +17,25 @@ $email_secondary = "marketopenmedia@gmail.com";
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title><?php echo htmlspecialchars($page_title); ?></title>
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAHm0lEQVR4nO2YbWwUxxnH/8/M7t6dfXd+wcYmAVPcQBoIIlUtpelLwFXSkpYCbbCTUFUlrZRW/VBKGjVVW+lsNVFCK1T1S6KgppEaQVuTRiovDlFfHERxUDEqjbB5qQ3YgM9wNmfu/XZn5umHA9RURcJnKI66P2ml1Wpn9pn/PPPMfwfw8fHx8fHx8fHx8fHx8Zk6XV0SzHS7w7j9dLEEPnhCTCNgprlbzgZRX79cRoIHh79Ek6XHLEBkbk54tx5RdssuiHNPzysY5gaPzMD8bv5uWxdLEJlSNvw/wCwAYM62YlfTAeambt27cC8vAwD0sHVbY7tBys8AANgBAjPZhXSHe9YUDYkHXOBA8161Hq2kwDM/E6YnQDtpdIBGvlE3gCIf1gVolUfAOHJbc7f6AYj0FRFmbHGcngAAsKLUByv+I2tInTPGHfcu67B8YUG3/gmINHpmbiZMX4AEGACgzYBJKZeVyUHRhDfq9Zuo+HHzH9SzaCU1U2vC9AW4gnb1GEtLkjF/NWQ1kzJ97jk9rCLyxflvqifQSmom7g43TQDWtkQA0kA6nFW9yg6sQqHwsnsJRe3IV5r38FK0k766c8wUph9MPwhgYtC9KqnS2pMPgvVuJszSFFzJk8XXTRCRQlbvmt+VacQOWHilz54p9nn663IADBAbo1eR4Tgrz9KO9TDGsj+SIRmaVTy4OXlyya+tSovvqR9PDn9+kQsA+CZK9rkfjM7b5xynNwsxFugAVz+XbzKVgZMyKhwrl3pSsj4dmB0azhv7k0zy00KgHgIhsuAJaYYsR7wbDKLnZCuNAygJ0QYDIr4Zg5oK08yAdwSoValY4XlhNMlk+jEOOPGiE33adbFWVADIAUqpLEnOkIRgS3yRNTapohmb/5Z+wyL3F0MraRBASYh20tMf1o1Tfga0scQO0uFnUw+CxC7HJD/nVTWulLVWjAs6T0bvkaSOE3EBQkhYAjKgigGV79Oh4FJVEXrRqpMBysITwvzs/ibRueNecv/X2VC+ADEWAJzwxGg3wdtC0fo2dqyvCfJ+ZxnvONt2I1uikYkcIQWzBQsW5sqAADnWYiJ1icDnyEKtiNpzUTDnweJbo220u9R/j4WOFfpWC1GeAFdmv+LrJzYIMgEO1d5HFq20yH1VEpJUEZoQ0huQ8b8Nxreuzl1tVrXZ3SaqxWpb5zaFL5za+dXO+8Z3P7UzOL6sZb4Xjn6ZbWcdEb0HWM+PPkEnAeCad+gHo7NUcG/CuK9RZgYw1bQdjipZfNQEqu8iIR6psM0zbBWGE/2pM9jXqq69GmOBJaCqIUQJ7kG7MPlYorPhyPV6vuO19OMk7YcFcFQE1W+G28Nj14sBfHUEBABlCTN1HxCLCYCY9eVqo1WI3ezqmtzpdRe3Lvlz4qWPDWJfa8nxxWKidELUAbSTDmKyKqCzzyQ6G44gxg6Y6eoVYxbLr1jl0Scjv0VBx2C4Whecnju3651N29RT87a7LU2/5zlzuzhU8hDEpeVBXO7ggbIyoPTxu77yejSeb9wjLX4u1fXZt7G8x3rfzP8nsZhAZ6e52v6/vbK466iDbP3idDFwtyG7mrUJQ8iwsDhAZC7awAVJ7mX2illbmlRlSl+2+FKxOhVP7+14JF1OvZj6NhjrIHSCxybDyyBzxzNvrnl705be0M+/94l8X1+f3dLSorj0C6zfAeSHzpyxDh065LW1tXEHOsSKDojI4T6KRqNi4cKFpr+/nxxnCaVSMC0t5Dbt5uFAI9KDLTS0+Cg7XhT1/2yi84t6uC6HQrWdCqcbimdTXlLS5Nyayjv7T6UjaDKg8lbz1Fstj1nY16kqV+34DpgG8t3r/vTqr3qqly6NZNPpdGUkEsmeTacrA/l8PhQK2WkgGKmvL+QzGeEqxcFMxgaALJEFALbjGKUUz85m3cfdNbYgbzsiuIQcEREXqZqUnkBBkJlgi+6G4vMsrAUWmZeMNvOGHw28hhiLct3k1GvA7CUMADaxMfnMMW0Skdo5qDt16mL1sdFRcl3XimgdAIBEIoHJs24+kUggMzJCbiZjBwKBVDwezw0eOZt/r/fyZCGRSP0jaRU/tXZtml21TBfw1shKZ73Jkq0yqC6e0YMqYxpVDrNMSh1WOTNk0q7tpsxGTpkRAMCS8rfzqS+BxW0MAI5lkpN/6U2OX3jogXl3NIi/p44e+WjzPXUFFL1sNpsP1tVVNcyeLc+dOFGoyFbBikYpHs+bcIOp+PCyZYH7g1U1KUuPjYyPe7VDQgCAmfQ8Lay19S8XP+KlPIuIk2S7I1y0Bz3b/iEU5wA0sfJegB38pUOiZKX7yy+CZVjhDgCAFvJE7RceqnHPjb27/8BFvXFje3H3/v3KJJPFNWvW5Lq7u6OXlVK2bRdzuZwTDofNhg1rva27dgVrBge9yWAwG4/HPQAIAgoA4onNvY01m77PUlZW6OwxSan84LcXpRbHjjoTjQtG2JAkLo5d3Fhzev5PL3wG9bMnAeC2/EzVt3WFm9a/0XzLPzQDD1Gu8fFNW0KxWOzf6whd5/7GibFAjMU1nwAAYHrfcwAz5TzBx8fHx8fHx8fHx8fHx8fHx8fHx8fng8S/AOy0uw59AVQwAAAAAElFTkSuQmCC">
+<!-- Open Graph / Social Media -->
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://marketopenmedia.com/"/>
+<meta property="og:title" content="Market Open Media — Google Maps SEO for Contractors"/>
+<meta property="og:description" content="We help local contractors rank #1 on Google Maps and get more calls. Plumbers, electricians, HVAC, roofers — if customers search it, we make sure they find you."/>
+<meta property="og:image" content="https://res.cloudinary.com/dvblqyb4g/image/upload/ChatGPT_Image_Jul_21_2026_at_10_51_21_PM_rwui6j.png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:site_name" content="Market Open Media"/>
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Market Open Media — Google Maps SEO for Contractors"/>
+<meta name="twitter:description" content="We help local contractors rank #1 on Google Maps and get more calls."/>
+<meta name="twitter:image" content="https://res.cloudinary.com/dvblqyb4g/image/upload/ChatGPT_Image_Jul_21_2026_at_10_51_21_PM_rwui6j.png"/>
+<!-- SEO -->
+<meta name="description" content="We help local contractors rank #1 on Google Maps and get more calls. Plumbers, electricians, HVAC, roofers — if customers search it, we make sure they find you."/>
+<link rel="canonical" href="https://marketopenmedia.com/"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
@@ -351,7 +370,7 @@ h1{
 }
 .trusted-grid{
   display:grid;
-  grid-template-columns:repeat(5,1fr);
+  grid-template-columns:repeat(6,1fr);
 }
 .trusted-item{
   display:flex;
@@ -506,14 +525,15 @@ h1{
     flex-direction:column;
     align-items:flex-start;
     position:fixed;
-    top:72px;left:0;right:0;bottom:0;
-    z-index:200;
-    background:rgba(4,12,27,0.97);
-    backdrop-filter:blur(24px);
-    -webkit-backdrop-filter:blur(24px);
-    border-top:1px solid var(--line);
-    padding:40px 28px 44px;
+    top:0;left:0;right:0;bottom:0;
+    z-index:9999;
+    background:#040c1b;
+    backdrop-filter:none;
+    -webkit-backdrop-filter:none;
+    border-top:none;
+    padding:100px 28px 44px;
     gap:4px;
+    overflow-y:auto;
     animation:drawerIn .26s cubic-bezier(.22,1,.36,1) both;
   }
   @keyframes drawerIn{
@@ -573,7 +593,7 @@ h1{
    RESPONSIVE — 480px
 ════════════════════════════════════════════════════ */
 @media(max-width:480px){
-  .header{padding:0 24px}
+  .header{padding:12px 12px 12px 12px}
   .hero{background-position:center bottom;}
   .hero-body{padding:0 24px}
   .hero-content{padding-left:24px}
@@ -608,19 +628,15 @@ h1{
   .hero-actions{flex-direction:column;align-items:center;gap:18px}
   .btn-primary{width:auto;display:inline-flex;align-self:center;}
   .trusted-inner{padding:20px 18px 24px}
-  .trusted-grid{grid-template-columns:repeat(6,1fr)}
-  .trusted-item:nth-child(1){grid-column:span 3}
-  .trusted-item:nth-child(2){grid-column:span 3}
-  .trusted-item:nth-child(3){grid-column:span 2}
-  .trusted-item:nth-child(4){grid-column:span 2}
-  .trusted-item:nth-child(5){grid-column:span 2}
+  .trusted-grid{grid-template-columns:repeat(3,1fr)}
   .trusted-item:nth-child(1),
-  .trusted-item:nth-child(2){border-bottom:1px solid var(--line)}
-  .trusted-item:nth-child(3),
+  .trusted-item:nth-child(2),
+  .trusted-item:nth-child(3){border-bottom:1px solid var(--line)}
   .trusted-item:nth-child(4),
-  .trusted-item:nth-child(5){border-bottom:none}
-  .trusted-item:nth-child(2){border-right:none}
-  .trusted-item:nth-child(5){border-right:none}
+  .trusted-item:nth-child(5),
+  .trusted-item:nth-child(6){border-bottom:none}
+  .trusted-item:nth-child(3),
+  .trusted-item:nth-child(6){border-right:none}
   .services{padding:24px 18px 64px}
   .cards{grid-template-columns:1fr}
 }
@@ -771,19 +787,12 @@ h1{
     padding:0 0 48px !important;
   }
 
-  /* Heatmaps — remove top border/padding since it now follows the testimonial */
-  section[style*="padding:80px 68px"]{
-    border-top:none !important;
-    padding-top:0 !important;
-    padding-bottom:8px !important;
-  }
-  /* Heatmaps — mismo tamaño: stack 1 columna, header igual altura */
-  div[style*="grid-template-columns:1fr 1fr;gap:32px;max-width:900px"]{
+  /* Heatmaps — mobile: stack 1 columna */
+  div[style*="max-width:1200px"][style*="grid-template-columns:1fr 1fr"]{
     grid-template-columns:1fr !important;
     gap:20px !important;
-    max-width:100% !important;
   }
-  div[style*="grid-template-columns:1fr 1fr;gap:32px;max-width:900px"] > div > div:first-child{
+  div[style*="max-width:1200px"][style*="grid-template-columns:1fr 1fr"] > div > div:first-child{
     min-height:72px !important;
   }
   .services{padding:8px 24px 64px !important}
@@ -838,10 +847,8 @@ h1{
 
 <!-- ══════════════════════ HEADER ══════════════════════ -->
 <header class="header">
-  <a href="#" class="logo" aria-label="Market Open Media">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 120" style="height:28px;width:auto;display:block;">
-  <text x="0" y="76" fill="#F8FAFF" font-family="Inter, Arial, Helvetica, sans-serif" font-size="54" font-weight="600" letter-spacing="16">MARKET OPEN MEDIA</text>
-</svg>
+  <a href="index.php" class="logo" aria-label="Market Open Media">
+    <img src="https://res.cloudinary.com/dvblqyb4g/image/upload/v1781132748/copy_of_chatgpt_image_jun_10_2026_at_12_47_08_pm_tu2gmz.png" alt="Market Open Media" style="height:60px;width:auto;display:block;">
   </a>
 
   <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
@@ -852,7 +859,7 @@ h1{
     <a href="services.php">Services</a>
     <a href="#results">Results</a>
     <a href="#about">About</a>
-    <a href="#contact">Contact</a>
+
     <a href="<?php echo htmlspecialchars($calendly_url); ?>" class="btn-nav" target="_blank" rel="noopener">
       Book a Call
     </a>
@@ -958,6 +965,10 @@ h1{
         <img src="https://res.cloudinary.com/dvblqyb4g/image/upload/v1780631154/icon-plumbing-drop_gfixk3.svg" alt=""/>
         <span>Plumbing</span>
       </div>
+      <div class="trusted-item">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.80)" stroke-width="1.5" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+        <span>Contractors</span>
+      </div>
     </div>
   </div>
 </div>
@@ -1062,7 +1073,7 @@ h1{
 
       <div style="display:flex;align-items:center;gap:20px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:14px;padding:24px 28px;">
         <div style="width:48px;height:48px;border-radius:10px;background:rgba(17,86,244,0.15);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
-          <img src="https://res.cloudinary.com/dvblqyb4g/image/upload/v1780631208/icon-google-maps-pin_mqlbv4.svg" alt="" style="width:24px;height:24px;filter:brightness(0) saturate(100%) invert(40%) sepia(80%) saturate(600%) hue-rotate(210deg);" />
+          <img src="https://res.cloudinary.com/dvblqyb4g/image/upload/v1780631112/icon-google-maps-pin_bzovmv.svg" alt="" style="width:24px;height:24px;filter:brightness(0) saturate(100%) invert(40%) sepia(80%) saturate(600%) hue-rotate(210deg);" />
         </div>
         <div>
           <div style="font-size:clamp(28px,3vw,40px);font-weight:800;color:#ffffff;letter-spacing:-0.04em;line-height:1;margin-bottom:4px;">90 Days</div>
@@ -1110,6 +1121,8 @@ h1{
     </div>
 
 
+</section>
+
 <!-- ══════════════════════ HEATMAPS ══════════════════════ -->
 <section style="padding:80px 68px;border-top:1px solid rgba(255,255,255,0.07);">
   <div style="max-width:1520px;margin:0 auto;">
@@ -1118,7 +1131,7 @@ h1{
       <h2 style="font-size:clamp(26px,2.8vw,40px);font-weight:700;letter-spacing:-0.03em;color:#fff;line-height:1.08;margin-bottom:16px;">From buried to dominating — see the difference.</h2>
       <p style="font-size:15px;color:rgba(255,255,255,0.60);max-width:560px;margin:0 auto;">These Google Maps ranking heatmaps show exactly what happens when we go to work. Red = before. Green = after.</p>
     </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;max-width:900px;margin:0 auto;">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;max-width:932px;margin:0 auto;">
       <!-- Before heatmap -->
       <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:16px;overflow:hidden;">
         <div style="padding:20px 24px 12px;border-bottom:1px solid rgba(255,255,255,0.08);">
@@ -1152,10 +1165,6 @@ h1{
     </div>
     <p style="text-align:center;font-size:13px;color:rgba(255,255,255,0.40);margin-top:24px;">Each dot represents a search location. The number shows your Google Maps ranking at that spot.</p>
   </div>
-</section>
-
-  </div>
-
 </section>
 
 <!-- ══════════════════════ SERVICES ══════════════════════ -->
@@ -1324,24 +1333,14 @@ h1{
     <!-- 16:9 aspect ratio wrapper -->
     <div style="position:relative;padding-top:56.25%;background:#061030;">
 
-      <!-- YouTube thumbnail — click opens video in YouTube -->
-      <a href="https://www.youtube.com/watch?v=zG_oxg66Ff0"
-         target="_blank" rel="noopener"
-         style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-decoration:none;cursor:pointer;background:#061030;">
-        <img
-          src="https://img.youtube.com/vi/zG_oxg66Ff0/maxresdefault.jpg"
-          alt="CEO explains real client results"
-          style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.75;"
-        />
-        <div style="position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;gap:14px;">
-          <div style="width:72px;height:72px;border-radius:50%;background:rgba(11,114,255,0.90);display:flex;align-items:center;justify-content:center;box-shadow:0 0 32px rgba(11,114,255,0.55);">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="white">
-              <path d="M8 5.5L19 12L8 18.5V5.5Z"/>
-            </svg>
-          </div>
-          <span style="font-size:13px;font-weight:600;color:rgba(255,255,255,0.90);letter-spacing:.04em;background:rgba(0,0,0,0.50);padding:5px 14px;border-radius:100px;">Watch on YouTube</span>
-        </div>
-      </a>
+      <iframe
+        src="https://www.youtube.com/embed/zG_oxg66Ff0?rel=0&modestbranding=1"
+        title="CEO explains real client results"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+        style="position:absolute;inset:0;width:100%;height:100%;border:0;">
+      </iframe>
 
     </div>
   </div>
@@ -1467,9 +1466,9 @@ h1{
       <!-- Brand col -->
       <div>
         <div style="margin-bottom:20px;">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 120" style="height:18px;width:auto;display:block;">
-            <text x="0" y="76" fill="#F8FAFF" font-family="Inter, Arial, Helvetica, sans-serif" font-size="54" font-weight="600" letter-spacing="16">MARKET OPEN MEDIA</text>
-          </svg>
+          <a href="index.php" style="text-decoration:none;">
+            <img src="https://res.cloudinary.com/dvblqyb4g/image/upload/v1781132748/copy_of_chatgpt_image_jun_10_2026_at_12_47_08_pm_tu2gmz.png" alt="Market Open Media" style="height:60px;width:auto;display:block;">
+          </a>
         </div>
         <p style="font-size:13.5px;color:rgba(255,255,255,0.45);line-height:1.70;max-width:280px;margin-bottom:24px;">Performance marketing for local service businesses. We get you to the top of Google Maps and fill your phone with qualified calls.</p>
       </div>
@@ -1525,7 +1524,7 @@ h1{
 
     <!-- Bottom bar -->
     <div style="border-top:1px solid rgba(255,255,255,0.07);padding-top:24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;">
-      <p style="font-size:12px;color:rgba(255,255,255,0.25);">© 2025 Market Open Media. All rights reserved.</p>
+      <p style="font-size:12px;color:rgba(255,255,255,0.25);">© 2026 Market Open Media. All rights reserved.</p>
       <div style="display:flex;gap:24px;">
         <a href="#" style="font-size:12px;color:rgba(255,255,255,0.25);text-decoration:none;" onmouseover="this.style.color='rgba(255,255,255,0.55)'" onmouseout="this.style.color='rgba(255,255,255,0.25)'">Privacy Policy</a>
         <a href="#" style="font-size:12px;color:rgba(255,255,255,0.25);text-decoration:none;" onmouseover="this.style.color='rgba(255,255,255,0.55)'" onmouseout="this.style.color='rgba(255,255,255,0.25)'">Terms of Service</a>
