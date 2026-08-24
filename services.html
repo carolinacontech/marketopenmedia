@@ -1901,6 +1901,17 @@ document.querySelectorAll('.fade').forEach(function(el){ obs.observe(el); });
   });
 })();
 </script>
+<script>
+document.addEventListener('click', function(e){
+  var link = e.target.closest('a[href*="calendly.com"]');
+  if (link && typeof gtag === 'function') {
+    gtag('event', 'book_call_click', {
+      link_url: link.href,
+      page_location: window.location.href
+    });
+  }
+});
+</script>
 
 </body>
 </html>
