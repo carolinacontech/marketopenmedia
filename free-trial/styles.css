@@ -714,6 +714,8 @@ a { color: inherit; text-decoration: none; }
 .testi-video-wrap {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 32px;
   margin-top: 48px;
 }
 .testi-video-wrap iframe,
