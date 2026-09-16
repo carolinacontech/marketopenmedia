@@ -213,6 +213,11 @@ a { color: inherit; text-decoration: none; }
 }
 .hero-top .eyebrow { margin-bottom: 20px; display: inline-flex; }
 .hero-top h1 { font-size: clamp(28px, 4.5vw, 58px); }
+
+@media (max-width: 480px) {
+  .hero-top { margin-bottom: 20px; }
+  .hero { padding: 40px 0 48px; }
+}
 .nowrap { white-space: nowrap; }
 
 @keyframes freeGlow {
@@ -646,6 +651,44 @@ a { color: inherit; text-decoration: none; }
   font-size: 15px;
 }
 .calendar-embed .cal-header svg { color: var(--accent); }
+
+.urgency-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: rgba(239,68,68,0.1);
+  border: 1px solid rgba(239,68,68,0.25);
+  border-radius: 99px;
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #fca5a5;
+  margin: 0 auto 28px;
+  max-width: 560px;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.urgency-bar strong { color: #fff; }
+.urgency-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: #ef4444;
+  box-shadow: 0 0 0 3px rgba(239,68,68,0.3);
+  flex-shrink: 0;
+  animation: pulse 1.8s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%,100% { box-shadow: 0 0 0 3px rgba(239,68,68,0.3); }
+  50%      { box-shadow: 0 0 0 6px rgba(239,68,68,0.1); }
+}
+
+.cal-reassurance {
+  padding: 16px 24px;
+  font-size: 13px;
+  color: var(--ink-muted);
+  text-align: center;
+  border-top: 1px solid var(--border-light);
+}
 .calendar-frame-shell {
   aspect-ratio: 4/3;
   background: var(--panel-alt);
