@@ -215,9 +215,9 @@ a { color: inherit; text-decoration: none; }
 .hero-top h1 { font-size: clamp(32px, 4.5vw, 58px); }
 
 @keyframes freeGlow {
-  0%   { text-shadow: 0 0 20px rgba(62,207,106,0.8), 0 0 60px rgba(62,207,106,0.4); letter-spacing: 0.12em; }
-  50%  { text-shadow: 0 0 40px rgba(62,207,106,1), 0 0 100px rgba(62,207,106,0.6), 0 0 160px rgba(11,114,255,0.3); letter-spacing: 0.18em; }
-  100% { text-shadow: 0 0 20px rgba(62,207,106,0.8), 0 0 60px rgba(62,207,106,0.4); letter-spacing: 0.12em; }
+  0%   { text-shadow: 0 0 12px rgba(62,207,106,0.4); }
+  50%  { text-shadow: 0 0 24px rgba(62,207,106,0.7), 0 0 48px rgba(62,207,106,0.25); }
+  100% { text-shadow: 0 0 12px rgba(62,207,106,0.4); }
 }
 
 @keyframes freePop {
@@ -234,8 +234,8 @@ a { color: inherit; text-decoration: none; }
   color: var(--go);
   line-height: 1;
   animation: freePop 0.7s cubic-bezier(0.22,1,0.36,1) 0.3s both,
-             freeGlow 2.4s ease-in-out 1s infinite;
-  will-change: letter-spacing, text-shadow;
+             freeGlow 3.5s ease-in-out 1s infinite;
+  will-change: text-shadow;
 }
 
 .hero-video {
