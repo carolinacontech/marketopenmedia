@@ -688,6 +688,22 @@ a { color: inherit; text-decoration: none; }
   align-items: center;
   justify-content: center;
 }
+.testi-video-inner {
+  width: 100%;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.testi-byline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+.testi-byline strong { font-size: 16px; color: #fff; }
+.testi-byline span { font-size: 13.5px; color: var(--light-muted); }
 
 /* ---------- Footer ---------- */
 .site-footer {
