@@ -1,0 +1,166 @@
+/* Market Open Media — Homepage motion layer (no dependencies)
+   Keeps original hero background, wave, logo, copy, icons, analytics and CTA links.
+   Animation is automatically reduced/removed for users who request less motion.
+*/
+
+/* 01 · Staggered entrance: content is readable even without JavaScript */
+@keyframes mom-hero-reveal {
+  from { opacity: 0; translate: 0 20px; }
+  to   { opacity: 1; translate: 0 0; }
+}
+@keyframes mom-panel-arrive {
+  from { opacity: 0; translate: 0 25px; filter: blur(5px); }
+  to   { opacity: 1; translate: 0 0; filter: blur(0); }
+}
+@keyframes mom-grow-bar {
+  from { scale: 1 .06; opacity: .35; }
+  to   { scale: 1 1; opacity: 1; }
+}
+.mom-home .hero-content { animation: none !important; }
+.mom-home .hero-content > .eyebrow {
+  animation: mom-hero-reveal .68s cubic-bezier(.22,1,.36,1) .05s both;
+}
+.mom-home .hero-content > h1 {
+  animation: mom-hero-reveal .72s cubic-bezier(.22,1,.36,1) .14s both;
+}
+.mom-home .hero-content > .hero-sub:nth-of-type(1) {
+  animation: mom-hero-reveal .7s cubic-bezier(.22,1,.36,1) .25s both;
+}
+.mom-home .hero-content > .hero-sub:nth-of-type(2) {
+  animation: mom-hero-reveal .7s cubic-bezier(.22,1,.36,1) .34s both;
+}
+.mom-home .hero-content > .hero-actions {
+  animation: mom-hero-reveal .7s cubic-bezier(.22,1,.36,1) .43s both;
+}
+.mom-home .hero-content > .hero-actions + div {
+  animation: mom-hero-reveal .7s cubic-bezier(.22,1,.36,1) .53s both;
+}
+
+/* 02 · Hero chart: only Google Maps, no floating planet, star or circle */
+.mom-home .mom-hero-art {
+  transform: translate3d(0, var(--mom-parallax-y, 0px), 0);
+  will-change: auto;
+}
+.mom-home .mom-hero-art .mom-dash {
+  animation: mom-panel-arrive .85s cubic-bezier(.2,.85,.2,1) .24s both;
+}
+.mom-home .mom-chart i {
+  transform-origin: center bottom;
+  animation: mom-grow-bar .94s cubic-bezier(.16,.76,.32,1) both;
+}
+.mom-home .mom-chart i:nth-child(1){animation-delay:.52s}
+.mom-home .mom-chart i:nth-child(2){animation-delay:.61s}
+.mom-home .mom-chart i:nth-child(3){animation-delay:.70s}
+.mom-home .mom-chart i:nth-child(4){animation-delay:.79s}
+.mom-home .mom-chart i:nth-child(5){animation-delay:.88s}
+.mom-home .mom-chart i:nth-child(6){animation-delay:.97s}
+.mom-home .mom-chart i:nth-child(7){animation-delay:1.06s}
+.mom-home .mom-chart i:nth-child(8){animation-delay:1.15s}
+
+/* 03 · Scroll reveal; a JS-added class prevents hidden content if scripts fail */
+.mom-home.mom-motion-ready [data-mom-reveal] {
+  opacity: 0;
+  translate: 0 22px;
+  transition: opacity .68s cubic-bezier(.22,1,.36,1),
+              translate .68s cubic-bezier(.22,1,.36,1);
+  transition-delay: var(--mom-reveal-delay, 0ms);
+}
+.mom-home.mom-motion-ready [data-mom-reveal].mom-visible {
+  opacity: 1;
+  translate: 0 0;
+}
+
+/* 04 · Hover lift on clickable cards and service / result panels */
+.mom-home #services .card,
+.mom-home #what-you-get > div > div:nth-child(2) > div,
+.mom-home #results > div:nth-child(2) > div:first-child > div,
+.mom-home #maps-results > div > div:nth-child(2) > div,
+.mom-home #case-studies > div:last-child > div {
+  transition: transform .28s cubic-bezier(.2,.8,.2,1),
+              border-color .28s ease,
+              box-shadow .28s ease,
+              background-color .28s ease;
+}
+@media(hover:hover) and (pointer:fine){
+  .mom-home #services .card:hover,
+  .mom-home #results > div:nth-child(2) > div:first-child > div:hover,
+  .mom-home #maps-results > div > div:nth-child(2) > div:hover,
+  .mom-home #case-studies > div:last-child > div:hover {
+    transform: translateY(-5px);
+    border-color: rgba(100,210,247,.37) !important;
+    box-shadow: 0 18px 38px rgba(1,10,38,.22);
+  }
+  /* The 'What You Get' columns remain borderless, as requested. */
+  .mom-home #what-you-get > div > div:nth-child(2) > div:hover { transform: translateY(-3px); }
+  .mom-home #services .card:hover .mom-icon,
+  .mom-home #what-you-get > div > div:nth-child(2) > div:hover .mom-icon,
+  .mom-home #results > div:nth-child(2) > div:first-child > div:hover .mom-icon {
+    transform: scale(1.045);
+  }
+}
+.mom-home #services .card .mom-icon,
+.mom-home #what-you-get .mom-icon,
+.mom-home #results .mom-icon {
+  transition: transform .26s ease;
+  transform-origin: center;
+}
+
+/* 05 · Number count-up driven by motion.js. Original numbers are preserved. */
+.mom-home [data-mom-count] { font-variant-numeric: tabular-nums; }
+
+/* 06 · Sticky translucent navbar, activated only after scrolling */
+.mom-home header.sh {
+  transition: background-color .32s ease, box-shadow .32s ease,
+              border-color .32s ease, backdrop-filter .32s ease !important;
+}
+.mom-home header.sh.mom-is-scrolled {
+  background: rgba(5,13,36,.82) !important;
+  backdrop-filter: blur(18px) saturate(140%);
+  -webkit-backdrop-filter: blur(18px) saturate(140%);
+  box-shadow: 0 11px 38px rgba(0,7,35,.18) !important;
+  border-bottom: 1px solid rgba(170,200,255,.13) !important;
+}
+
+/* 07 · Responsive buttons with gentle arrow translation */
+.mom-home .hero-actions .arr,
+.mom-home .services-link svg,
+.mom-home header.sh .sh-btn,
+.mom-home .mom-last-cta a {
+  transition: translate .25s ease, transform .25s ease, background-color .25s ease,
+              box-shadow .25s ease !important;
+}
+@media(hover:hover) and (pointer:fine){
+  .mom-home .hero-actions a:hover .arr,
+  .mom-home .services-link:hover svg { translate: 4px -2px; }
+  .mom-home header.sh .sh-btn:hover,
+  .mom-home .mom-last-cta a:hover { transform: translateY(-2px); }
+}
+
+/* Touch: no faux hover movement or parallax; keep original hero dimensions. */
+@media(max-width:768px){
+  .mom-home .mom-hero-art { transform:none !important; }
+  .mom-home #services .card:active { transform: translateY(-2px); }
+}
+
+/* Accessibility: honor OS setting; keep all content and final metric values visible. */
+@media(prefers-reduced-motion:reduce){
+  .mom-home .hero-content,
+  .mom-home .hero-content > *,
+  .mom-home .mom-dash,
+  .mom-home .mom-chart i,
+  .mom-home [data-mom-reveal] {
+    animation: none !important;
+    transition: none !important;
+    opacity: 1 !important;
+    translate: none !important;
+    scale: 1 !important;
+    transform-origin: center !important;
+  }
+  .mom-home .mom-hero-art { transform: none !important; }
+  .mom-home header.sh,
+  .mom-home header.sh *,
+  .mom-home #services .card,
+  .mom-home #results > div:nth-child(2) > div:first-child > div,
+  .mom-home #what-you-get .mom-icon,
+  .mom-home .mom-last-cta a { transition: none !important; }
+}
