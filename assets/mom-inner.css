@@ -145,26 +145,27 @@ body.mom-services .cta-section .btn-primary:hover,body.mom-services .main-hero .
 body.mom-services footer{background:#080e23!important;color:#bcc7dd!important}
 body.mom-services footer p{color:#91a1bd!important}
 body.mom-services footer a{color:#b0c5e7}
-/* Two Google Channels section — dark background restore */
-body.mom-services .svc-channels-section{background:var(--mi-night,#0d1534)!important;color:#e4eaf8!important}
-body.mom-services .svc-channels-section .mi-subheading-h2{color:#fff!important}
-body.mom-services .svc-channels-section .dot{color:var(--mi-cyan,#70e3f4)!important}
-body.mom-services .svc-channels-section .hero-sub{color:#b3c5df!important}
-body.mom-services .svc-channels-section .hero-tagline{color:#7a9abf!important}
-body.mom-services .svc-channels-section .tab-widget{background:rgba(255,255,255,.04)!important;border:1px solid rgba(100,160,230,.2)!important;border-radius:20px!important}
-body.mom-services .svc-channels-section .tab-header{background:rgba(255,255,255,.05)!important;border-bottom:1px solid rgba(100,160,230,.15)!important;border-radius:20px 20px 0 0!important}
-body.mom-services .svc-channels-section .tab-btn{color:rgba(180,205,240,.65)!important;background:transparent!important}
-body.mom-services .svc-channels-section .tab-btn.active{color:#fff!important;background:rgba(100,160,230,.15)!important;border-color:rgba(100,160,230,.3)!important}
-body.mom-services .svc-channels-section .tab-service-label{color:var(--mi-cyan,#70e3f4)!important}
-body.mom-services .svc-channels-section .tab-service-title{color:#fff!important}
-body.mom-services .svc-channels-section .tab-service-desc{color:#9ab5d4!important}
-body.mom-services .svc-channels-section .tab-feature-list li{color:#c2d5ed!important;border-color:rgba(100,150,210,.18)!important}
-body.mom-services .svc-channels-section .chk{background:rgba(11,114,255,.12)!important;border-color:rgba(11,114,255,.25)!important}
-/* Industry strip icons visibility */
-body.mom-services .industry-strip{background:rgba(255,255,255,.04)!important;border-top:1px solid rgba(100,150,210,.15)!important}
-body.mom-services .industry-strip .section-label{color:#7a99c2!important}
-body.mom-services .industry-strip .industry-item span{color:#b3c5df!important}
-body.mom-services .industry-strip .industry-item img{filter:brightness(0) invert(1) opacity(.7)!important}
+/* Two Google Channels section — light bg, fixed text + icon colors */
+body.mom-services .svc-channels-section{background:var(--mi-pale,#f2f4fd)!important;color:var(--mi-ink,#111936)!important}
+body.mom-services .svc-channels-section .mi-subheading-h2{color:var(--mi-ink,#111936)!important}
+body.mom-services .svc-channels-section .dot{color:#0b72ff!important}
+body.mom-services .svc-channels-section .hero-sub{color:#3a4a6b!important}
+body.mom-services .svc-channels-section .hero-sub strong{color:#0b2252!important}
+body.mom-services .svc-channels-section .hero-tagline{color:#4d6080!important}
+body.mom-services .svc-channels-section .tab-widget{background:#fff!important;border:1px solid rgba(29,56,111,.15)!important;border-radius:20px!important;box-shadow:0 8px 32px rgba(11,40,100,.08)!important}
+body.mom-services .svc-channels-section .tab-header{background:#f5f7fd!important;border-bottom:1px solid rgba(29,56,111,.12)!important;border-radius:20px 20px 0 0!important}
+body.mom-services .svc-channels-section .tab-btn{color:#5a6e96!important;background:transparent!important}
+body.mom-services .svc-channels-section .tab-btn.active{color:#0b2252!important;background:#fff!important;border-color:rgba(29,56,111,.2)!important}
+body.mom-services .svc-channels-section .tab-service-label{color:#0b72ff!important}
+body.mom-services .svc-channels-section .tab-service-title{color:#0b2252!important}
+body.mom-services .svc-channels-section .tab-service-desc{color:#4a5f84!important}
+body.mom-services .svc-channels-section .tab-feature-list li{color:#2e3e5c!important;border-color:rgba(29,56,111,.1)!important}
+body.mom-services .svc-channels-section .chk{background:rgba(11,114,255,.08)!important;border-color:rgba(11,114,255,.2)!important}
+/* Industry strip — visible on light bg */
+body.mom-services .industry-strip{background:var(--mi-pale,#f2f4fd)!important;border:0!important;border-top:1px solid rgba(29,56,111,.08)!important}
+body.mom-services .industry-strip .section-label{color:#5a6e96!important}
+body.mom-services .industry-strip .industry-item span{color:#2e3e5c!important}
+body.mom-services .industry-strip .industry-item img{filter:brightness(0) saturate(0) opacity(.55)!important}
 /* Avoid hiding content without JavaScript. Reveal styles are enabled only after JS runs. */
 body.mom-inner[data-mi-motion="on"] .mi-reveal:not(.mi-visible){opacity:0;transform:translateY(22px)}
 body.mom-inner .mi-reveal{transition:opacity .72s cubic-bezier(.2,.7,.2,1),transform .72s cubic-bezier(.2,.7,.2,1)}
