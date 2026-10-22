@@ -43,13 +43,6 @@
 }
 .mom-home .mom-hero-art .mom-dash {
   animation: mom-panel-arrive .85s cubic-bezier(.2,.85,.2,1) .24s both;
-  transition: transform .4s cubic-bezier(.22,1,.36,1);
-  pointer-events: auto;
-}
-@media(hover:hover) and (pointer:fine){
-  .mom-home .mom-hero-art .mom-dash:hover {
-    transform: rotate(-4deg) translateX(-25%);
-  }
 }
 .mom-home .mom-chart i {
   transform-origin: center bottom;
