@@ -42,7 +42,7 @@
   will-change: auto;
 }
 .mom-home .mom-hero-art .mom-dash {
-  /* float animation defined in index.html inline CSS; mom-panel-arrive removed to avoid transform conflict */
+  animation: mom-panel-arrive .85s cubic-bezier(.2,.85,.2,1) .24s both;
 }
 .mom-home .mom-chart i {
   transform-origin: center bottom;
