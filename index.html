@@ -1270,14 +1270,19 @@ body.mom-home { background: var(--mom-deep); color: #fff; }
 
 /* Hero cleanup — Google Maps chart only (keep original GitHub photo and bottom curve). */
 .mom-home .mom-hero-art{display:flex;align-items:center;justify-content:center;}
+@keyframes mom-home-float{0%,100%{translate:0 0px}50%{translate:0 -14px}}
 .mom-home .mom-hero-art .mom-dash{
   position:relative;left:auto;right:auto;top:auto;bottom:auto;
   width:min(94%,465px);max-width:465px;min-height:315px;
   transform:rotate(-4deg);margin:auto;
+  animation:mom-home-float 5s ease-in-out infinite;
 }
 @media(max-width:700px){
   .mom-home .mom-hero-art{height:290px;max-width:100%;margin:8px auto 0;width:100%;}
   .mom-home .mom-hero-art .mom-dash{width:min(90%,390px);min-height:225px;padding:18px;transform:rotate(-3deg);}
+}
+@media(prefers-reduced-motion:reduce){
+  .mom-home .mom-hero-art .mom-dash{animation:none!important;}
 }
 </style><style id="mom-final-logo-and-benefit-icons">
 /* Final refinements — original Market Open Media logo + centered benefit icons. */
