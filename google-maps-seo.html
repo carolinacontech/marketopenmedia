@@ -286,7 +286,26 @@ a{color:inherit;text-decoration:none}
   flex-direction:column;
   gap:16px;
   width:100%;
-  max-width:520px;
+  max-width:560px;
+}
+.dash-hero-pair{
+  display:flex;
+  align-items:center;
+  gap:18px;
+}
+.dash-hero-pair .dash-card{
+  flex:0 0 auto;
+  width:min(270px,55%);
+}
+.dash-grid-video{
+  flex:1 1 0;
+  min-width:0;
+  border-radius:14px;
+  overflow:hidden;
+  width:100%;
+  height:auto;
+  display:block;
+  box-shadow:0 8px 32px rgba(0,0,0,.35);
 }
 .dash-card{
   background:#fff;
@@ -1126,6 +1145,9 @@ footer{
   .hero-left .main-tagline{ order:5; font-size:17px; margin-bottom:20px; }
   .hero-left .btn-primary{ order:6; }
   .dash-wrap{max-width:100%;}
+  .dash-hero-pair{flex-direction:column;gap:14px;}
+  .dash-hero-pair .dash-card{width:100%;}
+  .dash-grid-video{border-radius:10px;}
 
   /* Hero section (2nd section) — reordenar widget antes del botón */
   .hero{
@@ -1362,6 +1384,7 @@ footer{
 </div>
 <div class="hero-right fade d2">
 <div class="dash-wrap">
+<div class="dash-hero-pair">
 <div class="dash-card">
 <div class="dash-card-header">
 <div class="dash-icon maps-icon">
@@ -1404,8 +1427,11 @@ footer{
 </div>
 </div>
 </div>
+<video autoplay loop muted playsinline class="dash-grid-video">
+  <source src="/assets/grid-demo.mov" type="video/mp4">
+</video>
+</div><!-- /.dash-hero-pair -->
 </div>
-<p class="mom-demo-note">Illustrative example · not live campaign data</p></div>
 </div>
 </section>
 <!-- INDUSTRY STRIP -->
