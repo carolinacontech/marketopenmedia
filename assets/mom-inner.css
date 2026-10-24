@@ -4,6 +4,7 @@
 :root { --mi-deep:#080f29; --mi-night:#0d1534; --mi-night-2:#111d42; --mi-cyan:#70e3f4; --mi-cobalt:#638deb; --mi-pale:#f2f4fd; --mi-ink:#111936; --mi-muted:#586781; --mi-line:rgba(24,45,90,.11); }
 html {scroll-behavior:smooth}
 body.mom-inner {background:var(--mi-pale);overflow-x:clip;color:var(--mi-ink);font-family:Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+body.mom-inner header.sh .sh-nav.open{position:fixed!important;inset:0!important;overflow-y:auto!important;-webkit-overflow-scrolling:touch;z-index:9999!important;}
 body.mom-inner header.sh {height:84px!important;background:rgba(8,15,40,.94)!important;border-bottom:1px solid rgba(199,221,255,.11)!important;padding:0 clamp(20px,4.7vw,82px)!important;backdrop-filter:blur(18px)!important;box-shadow:none!important}
 body.mom-inner header.sh .sh-logo img {height:61px!important;width:auto!important;max-width:min(260px,50vw)!important;object-fit:contain;filter:none!important;opacity:1!important}
 body.mom-inner header.sh .sh-nav {gap:clamp(12px,1.75vw,28px)!important}
