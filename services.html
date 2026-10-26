@@ -104,7 +104,7 @@ fbq('track', 'PageView');
 }
 </script>
 <link href="/assets/nav.css" rel="stylesheet"/>
-<link href="/assets/mom-inner.css" rel="stylesheet"/></head>
+<link href="/assets/mom-inner.css?v=4" rel="stylesheet"/></head>
 <body class="mom-inner mom-services">
 <style>
 /* ── tokens ─────────────────────────────────────── */
@@ -1333,7 +1333,7 @@ footer{
 <div class="page">
 <!-- HEADER -->
 <header class="sh">
-<a aria-label="Market Open Media" class="sh-logo" href="/"><img alt="Market Open Media" src="https://res.cloudinary.com/dvblqyb4g/image/upload/v1781132748/copy_of_chatgpt_image_jun_10_2026_at_12_47_08_pm_tu2gmz.png"/></a>
+<a aria-label="Market Open Media" class="sh-logo" href="/"><img alt="Market Open Media" width="227" height="60" src="https://res.cloudinary.com/dvblqyb4g/image/upload/v1781132748/copy_of_chatgpt_image_jun_10_2026_at_12_47_08_pm_tu2gmz.png"/></a>
 <button aria-controls="shNav" aria-expanded="false" aria-label="Open menu" class="sh-burger" id="shBurger"><span></span><span></span><span></span></button>
 <nav aria-label="Main" class="sh-nav" id="shNav">
 <a data-page="/" href="/">Home</a>
@@ -1461,23 +1461,23 @@ footer{
 <p class="section-label">Recommended for Service-Based Businesses</p>
 <div class="industry-grid">
 <a class="industry-item" href="/services">
-<img alt="" src="https://res.cloudinary.com/dvblqyb4g/image/upload/v1780631112/icon-home-services_ssbxqd.svg"/>
+<img alt="" width="35" height="35" src="https://res.cloudinary.com/dvblqyb4g/image/upload/v1780631112/icon-home-services_ssbxqd.svg"/>
 <span>Home<br/>Services</span>
 </a>
 <a class="industry-item" href="/tree-service">
-<img alt="" src="https://res.cloudinary.com/dvblqyb4g/image/upload/v1780631209/icon-tree-services_xp4f0l.svg"/>
+<img alt="" width="35" height="35" src="https://res.cloudinary.com/dvblqyb4g/image/upload/v1780631209/icon-tree-services_xp4f0l.svg"/>
 <span>Tree<br/>Services</span>
 </a>
 <a class="industry-item" href="/roofing">
-<img alt="" src="https://res.cloudinary.com/dvblqyb4g/image/upload/v1780631208/icon-roofing_mqlbv4.svg"/>
+<img alt="" width="35" height="35" src="https://res.cloudinary.com/dvblqyb4g/image/upload/v1780631208/icon-roofing_mqlbv4.svg"/>
 <span>Roofing</span>
 </a>
 <a class="industry-item" href="/hvac">
-<img alt="" src="https://res.cloudinary.com/dvblqyb4g/image/upload/v1780631113/icon-hvac-waves_qyiygq.svg"/>
+<img alt="" width="35" height="35" src="https://res.cloudinary.com/dvblqyb4g/image/upload/v1780631113/icon-hvac-waves_qyiygq.svg"/>
 <span>HVAC</span>
 </a>
 <a class="industry-item" href="/plumbing">
-<img alt="" src="https://res.cloudinary.com/dvblqyb4g/image/upload/v1780631154/icon-plumbing-drop_gfixk3.svg"/>
+<img alt="" width="35" height="35" src="https://res.cloudinary.com/dvblqyb4g/image/upload/v1780631154/icon-plumbing-drop_gfixk3.svg"/>
 <span>Plumbing</span>
 </a>
 <a class="industry-item" href="/services">
@@ -1488,7 +1488,7 @@ footer{
 </div>
 </div>
 <!-- ORIGINAL HERO (moved down) -->
-<section style="border-bottom:1px solid var(--line)">
+<section class="svc-channels-section" style="border-bottom:1px solid rgba(255,255,255,.1)">
 <div class="hero">
 <!-- Left -->
 <div class="hero-content">
@@ -1534,6 +1534,28 @@ footer{
 </div>
 </div>
 </div>
+</section>
+<!-- VIDEO EXPLAINER -->
+<section class="svc-video-section" id="how-it-works">
+  <div class="svc-video-inner">
+    <p class="section-label">See How It Works</p>
+    <h2 class="svc-video-heading">Watch How We Get You to the Top of Google Maps<span class="dot">.</span></h2>
+    <p class="svc-video-sub">A quick walkthrough of our Google Maps SEO process — and exactly what happens after you sign up.</p>
+    <div class="svc-video-wrap">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" loading="lazy" src="https://www.youtube.com/embed/ZHAh4YQLIlM?rel=0&modestbranding=1" title="Google Maps SEO — Market Open Media"></iframe>
+    </div>
+  </div>
+</section>
+<!-- GRID DEMO VIDEO -->
+<section class="svc-grid-demo-section">
+  <div class="svc-video-inner">
+    <div class="svc-grid-demo-wrap">
+      <video autoplay loop muted playsinline class="svc-grid-demo-video">
+        <source src="/assets/grid-demo.mov" type="video/mp4">
+      </video>
+    </div>
+    <p class="svc-grid-demo-caption">Each square is a spot in your area. Green: you're in the top three there. Red: the call goes to someone else.</p>
+  </div>
 </section>
 <!-- SERVICES DETAIL -->
 <div style="border-bottom:1px solid var(--line)">
@@ -1593,7 +1615,7 @@ footer{
 </div>
 <div class="why-grid">
 <div class="why-left fade d1">
-<img alt="Exclusivity icon" loading="lazy" src="assets/images/why-us-visual.webp" style="width:80px;height:80px;object-fit:contain;margin-bottom:20px;display:block;"/>
+<img alt="Exclusivity icon" width="80" height="80" loading="lazy" src="assets/images/why-us-visual.webp" style="width:80px;height:80px;object-fit:contain;margin-bottom:20px;display:block;"/>
 <h3>One Client Per Area<span class="dot">.</span></h3>
 <p>We believe in exclusivity. That's why we only work with one business per service area.</p>
 <p>No competition. No conflicts of interest. Just our full focus on helping you <span style="color:var(--blue);font-weight:600;">win</span> in your market.</p>
@@ -1708,25 +1730,25 @@ footer{
 </div>
 </div>
 <!-- FAQ -->
-<section id="faq" style="padding:80px 68px;border-top:1px solid var(--line);">
+<section id="faq" style="padding:80px 68px;border-top:1px solid rgba(29,56,111,.12);background:#f2f4fd;">
 <div style="max-width:820px;margin:0 auto;">
-<h2 style="font-size:clamp(24px,3vw,38px);font-weight:700;letter-spacing:-0.03em;color:#fff;margin-bottom:40px;">Questions about our services.</h2>
+<h2 style="font-size:clamp(24px,3vw,38px);font-weight:700;letter-spacing:-0.03em;color:#0b2252;margin-bottom:40px;">Questions about our services.</h2>
 <div style="display:flex;flex-direction:column;gap:28px;">
 <div>
-<h3 style="font-size:17px;font-weight:700;color:#fff;margin-bottom:8px;">What's included in Google Maps SEO?</h3>
-<p style="font-size:14.5px;line-height:1.6;color:var(--muted);">Google Business Profile optimization, citation building, review strategy, on-site local SEO, and ongoing rank tracking — all aimed at getting your business into the Google Maps 3-pack for the searches that drive calls.</p>
+<h3 style="font-size:17px;font-weight:700;color:#0b2252;margin-bottom:8px;">What's included in Google Maps SEO?</h3>
+<p style="font-size:14.5px;line-height:1.6;color:#4d6080;">Google Business Profile optimization, citation building, review strategy, on-site local SEO, and ongoing rank tracking — all aimed at getting your business into the Google Maps 3-pack for the searches that drive calls.</p>
 </div>
 <div>
-<h3 style="font-size:17px;font-weight:700;color:#fff;margin-bottom:8px;">How does Google LSA management work?</h3>
-<p style="font-size:14.5px;line-height:1.6;color:var(--muted);">We set up and manage your Google Local Services Ads profile, including the Google Verified badge, so you appear at the very top of search results. You pay only for qualified leads, and we optimize spend and lead quality on an ongoing basis.</p>
+<h3 style="font-size:17px;font-weight:700;color:#0b2252;margin-bottom:8px;">How does Google LSA management work?</h3>
+<p style="font-size:14.5px;line-height:1.6;color:#4d6080;">We set up and manage your Google Local Services Ads profile, including the Google Verified badge, so you appear at the very top of search results. You pay only for qualified leads, and we optimize spend and lead quality on an ongoing basis.</p>
 </div>
 <div>
-<h3 style="font-size:17px;font-weight:700;color:#fff;margin-bottom:8px;">Can I do SEO and LSA together?</h3>
-<p style="font-size:14.5px;line-height:1.6;color:var(--muted);">Yes — most contractors combine both. LSA drives immediate leads at the top of Google while SEO builds compounding organic visibility that reduces cost-per-lead over time.</p>
+<h3 style="font-size:17px;font-weight:700;color:#0b2252;margin-bottom:8px;">Can I do SEO and LSA together?</h3>
+<p style="font-size:14.5px;line-height:1.6;color:#4d6080;">Yes — most contractors combine both. LSA drives immediate leads at the top of Google while SEO builds compounding organic visibility that reduces cost-per-lead over time.</p>
 </div>
 <div>
-<h3 style="font-size:17px;font-weight:700;color:#fff;margin-bottom:8px;">Is there a contract or can I try it first?</h3>
-<p style="font-size:14.5px;line-height:1.6;color:var(--muted);">We offer a 7-day trial before you commit to an ongoing plan, so you can see the process and early results firsthand.</p>
+<h3 style="font-size:17px;font-weight:700;color:#0b2252;margin-bottom:8px;">Is there a contract or can I try it first?</h3>
+<p style="font-size:14.5px;line-height:1.6;color:#4d6080;">We offer a 7-day trial before you commit to an ongoing plan, so you can see the process and early results firsthand.</p>
 </div>
 </div>
 </div>
@@ -1799,7 +1821,7 @@ footer{
 <div>
 <div style="margin-bottom:20px;">
 <a href="/" style="text-decoration:none;display:inline-block;">
-<img alt="Market Open Media" src="https://res.cloudinary.com/dvblqyb4g/image/upload/v1781132748/copy_of_chatgpt_image_jun_10_2026_at_12_47_08_pm_tu2gmz.png" style="height:60px;width:auto;display:block;"/>
+<img alt="Market Open Media" width="227" height="60" src="https://res.cloudinary.com/dvblqyb4g/image/upload/v1781132748/copy_of_chatgpt_image_jun_10_2026_at_12_47_08_pm_tu2gmz.png" style="height:60px;width:auto;display:block;"/>
 </a>
 </div>
 <p style="font-size:13.5px;color:rgba(255,255,255,0.45);line-height:1.70;max-width:280px;margin-bottom:24px;">Performance marketing for local service businesses. We get you to the top of Google Maps and fill your phone with qualified calls.</p>
