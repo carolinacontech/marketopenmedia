@@ -75,10 +75,8 @@ h1{font-size:clamp(30px,4.2vw,46px);line-height:1.1;margin-bottom:14px;}
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
 .card{background:var(--navy2);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;transition:border-color .2s;}
 .card:hover{border-color:rgba(11,114,255,0.4);}
-.card-img{aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;background:radial-gradient(ellipse 80% 80% at 50% 50%, rgba(11,114,255,0.20) 0%, transparent 70%), var(--navy2);border-bottom:1px solid var(--line);}
-.card-img{position:relative;overflow:hidden;}
-.card-img img{width:100%;height:100%;object-fit:cover;display:block;position:absolute;inset:0;}
-.card-img svg{width:64px;height:64px;object-fit:contain;}
+.card-img{aspect-ratio:16/9;position:relative;overflow:hidden;background:var(--navy2);border-bottom:1px solid var(--line);}
+.card-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;}
 .mom-blog-glyph{display:none;}
 .card-body{padding:22px;display:flex;flex-direction:column;flex:1;}
 .card-tag{font-size:10.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--blue);margin-bottom:10px;}
