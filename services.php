@@ -1,6 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '243877356528505');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=243877356528505&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Services — Market Open Media</title>
@@ -1234,6 +1251,7 @@ footer{
     <a href="#" class="active">Services</a>
     <a href="index.php#results">Results</a>
     <a href="index.php#about">About</a>
+    <a href="blog.html">Blog</a>
     <a href="https://calendly.com/marketopenmedia/googlemapsseo" class="btn-nav" target="_blank" rel="noopener">Book a Call</a>
   </nav>
 </header>
@@ -1356,30 +1374,30 @@ footer{
   <div class="industry-inner">
     <p class="section-label">Recommended for Service-Based Businesses</p>
     <div class="industry-grid">
-      <div class="industry-item">
+      <a href="services.html" class="industry-item">
         <img src="https://res.cloudinary.com/dvblqyb4g/image/upload/v1780631112/icon-home-services_ssbxqd.svg" alt=""/>
         <span>Home<br>Services</span>
-      </div>
-      <div class="industry-item">
+      </a>
+      <a href="tree-service.html" class="industry-item">
         <img src="https://res.cloudinary.com/dvblqyb4g/image/upload/v1780631209/icon-tree-services_xp4f0l.svg" alt=""/>
         <span>Tree<br>Services</span>
-      </div>
-      <div class="industry-item">
+      </a>
+      <a href="roofing.html" class="industry-item">
         <img src="https://res.cloudinary.com/dvblqyb4g/image/upload/v1780631208/icon-roofing_mqlbv4.svg" alt=""/>
         <span>Roofing</span>
-      </div>
-      <div class="industry-item">
+      </a>
+      <a href="hvac.html" class="industry-item">
         <img src="https://res.cloudinary.com/dvblqyb4g/image/upload/v1780631113/icon-hvac-waves_qyiygq.svg" alt=""/>
         <span>HVAC</span>
-      </div>
-      <div class="industry-item">
+      </a>
+      <a href="plumbing.html" class="industry-item">
         <img src="https://res.cloudinary.com/dvblqyb4g/image/upload/v1780631154/icon-plumbing-drop_gfixk3.svg" alt=""/>
         <span>Plumbing</span>
-      </div>
-      <div class="industry-item">
+      </a>
+      <a href="services.html" class="industry-item">
         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.80)" stroke-width="1.5" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
         <span>Contractors</span>
-      </div>
+      </a>
     </div>
   </div>
 </div>
@@ -1517,7 +1535,7 @@ footer{
   <div class="section-header fade">
     <p class="section-label">Why Market Open Media</p>
     <h2>Built Different<span class="dot">.</span></h2>
-    <p>We're not an agency that juggles dozens of clients in your market.<br>We're your dedicated growth partner.</p>
+    <p>We're a boutique agency, not a factory. We're not an agency that juggles dozens of clients in your market.<br>We're your dedicated growth partner with a personalized approach to every client.</p>
   </div>
   <div class="why-grid">
     <div class="why-left fade d1">
@@ -1535,6 +1553,7 @@ footer{
         <li><div class="why-chk"><svg viewBox="0 0 12 12" fill="none" stroke="#0b72ff" stroke-width="2"><path d="M2 6l3 3 5-5"/></svg></div>Lead dispute help to protect your ad spend</li>
         <li><div class="why-chk"><svg viewBox="0 0 12 12" fill="none" stroke="#0b72ff" stroke-width="2"><path d="M2 6l3 3 5-5"/></svg></div>Simple, measurable strategy with clear reporting</li>
         <li><div class="why-chk"><svg viewBox="0 0 12 12" fill="none" stroke="#0b72ff" stroke-width="2"><path d="M2 6l3 3 5-5"/></svg></div>We focus on calls, leads, and booked jobs</li>
+        <li><div class="why-chk"><svg viewBox="0 0 12 12" fill="none" stroke="#0b72ff" stroke-width="2"><path d="M2 6l3 3 5-5"/></svg></div>Boutique agency — personalized, hands-on service for every client</li>
       </ul>
     </div>
   </div>
@@ -1547,7 +1566,7 @@ footer{
   <div class="section-header fade">
     <p class="section-label">How It Works</p>
     <h2>How We Get You to the Top<span class="dot">.</span></h2>
-    <p>We use two powerful Google tools to dominate your local market — Google Maps SEO and Local Services Ads.</p>
+    <p>We use the power of Google Maps to dominate your local market.</p>
   </div>
 
   <!-- 3 feature cards -->
@@ -1683,7 +1702,7 @@ footer{
         <ul style="list-style:none;display:flex;flex-direction:column;gap:11px;">
           <li><a href="services.php" style="font-size:13.5px;color:rgba(255,255,255,0.48);text-decoration:none;" onmouseover="this.style.color='rgba(255,255,255,0.85)'" onmouseout="this.style.color='rgba(255,255,255,0.48)'">Google Maps SEO</a></li>
           <li><a href="services.php" style="font-size:13.5px;color:rgba(255,255,255,0.48);text-decoration:none;" onmouseover="this.style.color='rgba(255,255,255,0.85)'" onmouseout="this.style.color='rgba(255,255,255,0.48)'">Google LSA Management</a></li>
-          <li><a href="index.php#results" style="font-size:13.5px;color:rgba(255,255,255,0.48);text-decoration:none;" onmouseover="this.style.color='rgba(255,255,255,0.85)'" onmouseout="this.style.color='rgba(255,255,255,0.48)'">Case Studies</a></li>
+          <li><a href="case-studies.html" style="font-size:13.5px;color:rgba(255,255,255,0.48);text-decoration:none;" onmouseover="this.style.color='rgba(255,255,255,0.85)'" onmouseout="this.style.color='rgba(255,255,255,0.48)'">Case Studies</a></li>
           <li><a href="index.php#why" style="font-size:13.5px;color:rgba(255,255,255,0.48);text-decoration:none;" onmouseover="this.style.color='rgba(255,255,255,0.85)'" onmouseout="this.style.color='rgba(255,255,255,0.48)'">Why Us</a></li>
         </ul>
       </div>
@@ -1692,11 +1711,10 @@ footer{
       <div>
         <p style="font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#fff;margin-bottom:18px;">Industries</p>
         <ul style="list-style:none;display:flex;flex-direction:column;gap:11px;">
-          <li style="font-size:13.5px;color:rgba(255,255,255,0.48);">Tree Services</li>
-          <li style="font-size:13.5px;color:rgba(255,255,255,0.48);">HVAC</li>
-          <li style="font-size:13.5px;color:rgba(255,255,255,0.48);">Plumbing</li>
-          <li style="font-size:13.5px;color:rgba(255,255,255,0.48);">Roofing</li>
-          <li style="font-size:13.5px;color:rgba(255,255,255,0.48);">Electrical</li>
+          <li><a href="tree-service.html" style="font-size:13.5px;color:rgba(255,255,255,0.48);text-decoration:none;" onmouseover="this.style.color='rgba(255,255,255,0.85)'" onmouseout="this.style.color='rgba(255,255,255,0.48)'">Tree Services</a></li>
+          <li><a href="hvac.html" style="font-size:13.5px;color:rgba(255,255,255,0.48);text-decoration:none;" onmouseover="this.style.color='rgba(255,255,255,0.85)'" onmouseout="this.style.color='rgba(255,255,255,0.48)'">HVAC</a></li>
+          <li><a href="plumbing.html" style="font-size:13.5px;color:rgba(255,255,255,0.48);text-decoration:none;" onmouseover="this.style.color='rgba(255,255,255,0.85)'" onmouseout="this.style.color='rgba(255,255,255,0.48)'">Plumbing</a></li>
+          <li><a href="roofing.html" style="font-size:13.5px;color:rgba(255,255,255,0.48);text-decoration:none;" onmouseover="this.style.color='rgba(255,255,255,0.85)'" onmouseout="this.style.color='rgba(255,255,255,0.48)'">Roofing</a></li>
         </ul>
       </div>
 
@@ -1730,8 +1748,8 @@ footer{
     <div style="border-top:1px solid rgba(255,255,255,0.07);padding-top:24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;">
       <p style="font-size:12px;color:rgba(255,255,255,0.25);">© 2026 Market Open Media. All rights reserved.</p>
       <div style="display:flex;gap:24px;">
-        <a href="#" style="font-size:12px;color:rgba(255,255,255,0.25);text-decoration:none;" onmouseover="this.style.color='rgba(255,255,255,0.55)'" onmouseout="this.style.color='rgba(255,255,255,0.25)'">Privacy Policy</a>
-        <a href="#" style="font-size:12px;color:rgba(255,255,255,0.25);text-decoration:none;" onmouseover="this.style.color='rgba(255,255,255,0.55)'" onmouseout="this.style.color='rgba(255,255,255,0.25)'">Terms of Service</a>
+        <a href="privacy.html" style="font-size:12px;color:rgba(255,255,255,0.25);text-decoration:none;" onmouseover="this.style.color='rgba(255,255,255,0.55)'" onmouseout="this.style.color='rgba(255,255,255,0.25)'">Privacy Policy</a>
+        <a href="terms.html" style="font-size:12px;color:rgba(255,255,255,0.25);text-decoration:none;" onmouseover="this.style.color='rgba(255,255,255,0.55)'" onmouseout="this.style.color='rgba(255,255,255,0.25)'">Terms of Service</a>
       </div>
     </div>
 

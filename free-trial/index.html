@@ -1,29 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '243877356528505');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=243877356528505&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Free Google Maps Ranking Trial | Market Open Media</title>
-<meta name="description" content="We run a live Google Maps ranking grid on your business and show you the movement — free for 7 days. For tree service, HVAC, plumbing, roofing & electrical contractors. One contractor per market." />
+<title>Free Ranking Trial</title>
+<meta name="description" content="We run a live Google Maps ranking grid on your business and show you the movement — free for 7 days. For tree service, HVAC, plumbing & roofing contractors. One contractor per market." />
 <link rel="canonical" href="https://marketopenmedia.com/free-trial/" />
-<meta property="og:title" content="Free Google Maps Ranking Trial | Market Open Media" />
-<meta property="og:description" content="We run a live Google Maps ranking grid on your business — free for 7 days. For HVAC, plumbing, roofing, tree service & electrical contractors." />
-<meta property="og:image" content="https://res.cloudinary.com/dvblqyb4g/image/upload/ChatGPT_Image_Jul_21_2026_at_10_51_21_PM_rwui6j.png" />
-<meta property="og:url" content="https://marketopenmedia.com/free-trial/" />
-<meta property="og:type" content="website" />
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Service",
+  "@type": "WebPage",
   "name": "Free 7-Day Google Maps Ranking Trial",
-  "provider": {
+  "url": "https://marketopenmedia.com/free-trial/",
+  "isPartOf": {
     "@type": "Organization",
     "name": "Market Open Media",
     "url": "https://marketopenmedia.com"
   },
-  "description": "A free 7-day Google Maps ranking grid trial for local service contractors — HVAC, plumbing, roofing, tree service, and electrical.",
-  "areaServed": "US",
-  "url": "https://marketopenmedia.com/free-trial/"
+  "about": {
+    "@type": "Service",
+    "name": "Google Maps SEO",
+    "provider": { "@type": "Organization", "name": "Market Open Media", "url": "https://marketopenmedia.com" }
+  }
 }
 </script>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%23ff5a1f%22/><text x=%2250%22 y=%2268%22 font-size=%2260%22 font-family=%22Arial%22 font-weight=%22900%22 fill=%22white%22 text-anchor=%22middle%22>M</text></svg>" />
@@ -46,13 +61,16 @@
 <header class="site-header">
   <div class="wrap">
     <div class="logo">
-      <img src="https://res.cloudinary.com/dvblqyb4g/image/upload/v1781132748/copy_of_chatgpt_image_jun_10_2026_at_12_47_08_pm_tu2gmz.png" alt="Market Open Media" width="180" height="64" style="height:64px;width:auto;display:block;">
+      <a href="https://marketopenmedia.com/" aria-label="Market Open Media home">
+        <img src="https://res.cloudinary.com/dvblqyb4g/image/upload/v1781132748/copy_of_chatgpt_image_jun_10_2026_at_12_47_08_pm_tu2gmz.png" alt="Market Open Media" width="180" height="64" style="height:64px;width:auto;display:block;">
+      </a>
     </div>
     <nav class="nav-links">
       <a href="#how-it-works">How It Works</a>
       <a href="#proof">Proof</a>
       <a href="#qualify">Do I Qualify?</a>
       <a href="#faq">FAQ</a>
+      <a href="/blog">Blog</a>
     </nav>
     <div class="header-cta">
       <a href="#cta" class="btn btn-primary"><span class="full">Book My Free 7-Day Trial</span><span class="short">Book Trial</span></a>
@@ -66,6 +84,7 @@
   <a href="#proof">Proof</a>
   <a href="#qualify">Do I Qualify?</a>
   <a href="#faq">FAQ</a>
+  <a href="/blog">Blog</a>
   <a href="#cta" class="btn btn-primary btn-block">Book My Free Trial Call</a>
 </div>
 
@@ -224,7 +243,11 @@
       <div class="stat"><div class="num">$0</div><div class="label">Cost To Try It</div></div>
     </div>
 
-    <p style="text-align:center;font-size:12px;color:var(--light-muted);margin-bottom:20px;letter-spacing:0.04em;">Example — typical results vary by market and trade</p>
+    <p style="text-align:center;font-size:12px;
+    color:var(--light-muted);margin-bottom:20px;
+    letter-spacing:0.04em;">
+    Example - typical results vary by market and trade
+    </p>
     <div class="grid-visual-row">
       <div class="grid-panel">
         <div class="cap">Day 1 — Baseline Grid</div>
@@ -395,6 +418,14 @@
       <!-- Calendly inline widget begin -->
       <div class="calendly-inline-widget" data-url="https://calendly.com/marketopenmedia/googlemapsseo" style="min-width:320px;height:900px;"></div>
       <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+      <script>
+        window.addEventListener('message', function(e) {
+          if (e.data.event && e.data.event === 'calendly.event_scheduled') {
+            if (typeof gtag === 'function') gtag('event', 'schedule_call', { method: 'calendly' });
+            if (typeof fbq === 'function') fbq('track', 'Schedule');
+          }
+        });
+      </script>
       <!-- Calendly inline widget end -->
       <p class="cal-reassurance">No sales pressure. 15 minutes — we confirm your market is open and get your trial live this week. If your market's taken, we'll tell you straight.</p>
     </div>
@@ -407,20 +438,22 @@
     <div class="footer-top">
       <div class="footer-brand">
         <div class="logo">
-          <img src="https://res.cloudinary.com/dvblqyb4g/image/upload/v1781132748/copy_of_chatgpt_image_jun_10_2026_at_12_47_08_pm_tu2gmz.png" alt="Market Open Media" style="height:40px;width:auto;display:block;">
+          <a href="https://marketopenmedia.com/" aria-label="Market Open Media home">
+            <img src="https://res.cloudinary.com/dvblqyb4g/image/upload/v1781132748/copy_of_chatgpt_image_jun_10_2026_at_12_47_08_pm_tu2gmz.png" alt="Market Open Media" style="height:40px;width:auto;display:block;">
+          </a>
         </div>
-        <p>We run free 7-day Google Maps ranking trials for contractors — tree service, HVAC, plumbing, roofing, and electrical. One contractor per trade, per market.</p>
+        <p>Part of <a href="https://marketopenmedia.com/services" style="color:inherit;">Market Open Media's Google Maps SEO &amp; LSA management</a>. We run free 7-day Google Maps ranking trials for contractors — tree service, HVAC, plumbing, and roofing. One contractor per trade, per market.</p>
       </div>
       <div class="footer-cols">
         <div class="footer-col">
-          <h3>Page</h3>
+          <h4>Page</h4>
           <a href="#how-it-works">How It Works</a>
           <a href="#proof">Proof</a>
           <a href="#qualify">Do I Qualify?</a>
           <a href="#faq">FAQ</a>
         </div>
         <div class="footer-col">
-          <h3>Contact</h3>
+          <h4>Contact</h4>
           <p>marketopenmedia@gmail.com</p>
           <p>Serving contractors across the United States</p>
         </div>

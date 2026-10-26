@@ -58,18 +58,16 @@
 .mom-home .mom-chart i:nth-child(8){animation-delay:1.15s}
 
 /* 03 · Scroll reveal; a JS-added class prevents hidden content if scripts fail */
-/* Transition is only on .mom-visible to prevent a "black box" fade-out flash on load */
 .mom-home.mom-motion-ready [data-mom-reveal] {
   opacity: 0;
   translate: 0 22px;
-  transition: none !important;
+  transition: opacity .68s cubic-bezier(.22,1,.36,1),
+              translate .68s cubic-bezier(.22,1,.36,1);
+  transition-delay: var(--mom-reveal-delay, 0ms);
 }
 .mom-home.mom-motion-ready [data-mom-reveal].mom-visible {
   opacity: 1;
   translate: 0 0;
-  transition: opacity .68s cubic-bezier(.22,1,.36,1),
-              translate .68s cubic-bezier(.22,1,.36,1);
-  transition-delay: var(--mom-reveal-delay, 0ms);
 }
 
 /* 04 · Hover lift on clickable cards and service / result panels */

@@ -1219,6 +1219,7 @@ footer{
     <a href="#" class="active">Services</a>
     <a href="#">Results</a>
     <a href="#">About</a>
+    <a href="blog.html">Blog</a>
     <a href="https://calendly.com/marketopenmedia/googlemapsseo" class="btn-nav" target="_blank" rel="noopener">Book a Call</a>
   </nav>
 </header>
@@ -1341,30 +1342,30 @@ footer{
   <div class="industry-inner">
     <p class="section-label">Recommended for Service-Based Businesses</p>
     <div class="industry-grid">
-      <div class="industry-item">
+      <a href="services.html" class="industry-item">
         <img src="https://res.cloudinary.com/dvblqyb4g/image/upload/v1780631112/icon-home-services_ssbxqd.svg" alt=""/>
         <span>Home<br>Services</span>
-      </div>
-      <div class="industry-item">
+      </a>
+      <a href="tree-service.html" class="industry-item">
         <img src="https://res.cloudinary.com/dvblqyb4g/image/upload/v1780631209/icon-tree-services_xp4f0l.svg" alt=""/>
         <span>Tree<br>Services</span>
-      </div>
-      <div class="industry-item">
+      </a>
+      <a href="roofing.html" class="industry-item">
         <img src="https://res.cloudinary.com/dvblqyb4g/image/upload/v1780631208/icon-roofing_mqlbv4.svg" alt=""/>
         <span>Roofing</span>
-      </div>
-      <div class="industry-item">
+      </a>
+      <a href="hvac.html" class="industry-item">
         <img src="https://res.cloudinary.com/dvblqyb4g/image/upload/v1780631113/icon-hvac-waves_qyiygq.svg" alt=""/>
         <span>HVAC</span>
-      </div>
-      <div class="industry-item">
+      </a>
+      <a href="plumbing.html" class="industry-item">
         <img src="https://res.cloudinary.com/dvblqyb4g/image/upload/v1780631154/icon-plumbing-drop_gfixk3.svg" alt=""/>
         <span>Plumbing</span>
-      </div>
-      <div class="industry-item">
+      </a>
+      <a href="services.html" class="industry-item">
         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.80)" stroke-width="1.5" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
         <span>Contractors</span>
-      </div>
+      </a>
     </div>
   </div>
 </div>
@@ -1502,7 +1503,7 @@ footer{
   <div class="section-header fade">
     <p class="section-label">Why Market Open Media</p>
     <h2>Built Different<span class="dot">.</span></h2>
-    <p>We're not an agency that juggles dozens of clients in your market.<br>We're your dedicated growth partner.</p>
+    <p>We're a boutique agency, not a factory. We're not an agency that juggles dozens of clients in your market.<br>We're your dedicated growth partner with a personalized approach to every client.</p>
   </div>
   <div class="why-grid">
     <div class="why-left fade d1">
@@ -1520,6 +1521,7 @@ footer{
         <li><div class="why-chk"><svg viewBox="0 0 12 12" fill="none" stroke="#0b72ff" stroke-width="2"><path d="M2 6l3 3 5-5"/></svg></div>Lead dispute help to protect your ad spend</li>
         <li><div class="why-chk"><svg viewBox="0 0 12 12" fill="none" stroke="#0b72ff" stroke-width="2"><path d="M2 6l3 3 5-5"/></svg></div>Simple, measurable strategy with clear reporting</li>
         <li><div class="why-chk"><svg viewBox="0 0 12 12" fill="none" stroke="#0b72ff" stroke-width="2"><path d="M2 6l3 3 5-5"/></svg></div>We focus on calls, leads, and booked jobs</li>
+        <li><div class="why-chk"><svg viewBox="0 0 12 12" fill="none" stroke="#0b72ff" stroke-width="2"><path d="M2 6l3 3 5-5"/></svg></div>Boutique agency — personalized, hands-on service for every client</li>
       </ul>
     </div>
   </div>
@@ -1532,7 +1534,7 @@ footer{
   <div class="section-header fade">
     <p class="section-label">How It Works</p>
     <h2>How We Get You to the Top<span class="dot">.</span></h2>
-    <p>We use two powerful Google tools to dominate your local market — Google Maps SEO and Local Services Ads.</p>
+    <p>We use the power of Google Maps to dominate your local market.</p>
   </div>
 
   <!-- 3 feature cards -->
